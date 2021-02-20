@@ -752,8 +752,27 @@ body {
   width: 100%;
 }
 
+.content__list--1.content__list--requisites .content__item {
+  margin-bottom: 15px;
+}
+
+.content__list--1.content__list--redaction .content__item {
+  margin-bottom: 10px;
+  margin-right: 65px;
+}
+
+.content__list--1.content__list--redaction .content__item:last-child {
+  margin-bottom: 15px;
+}
+
 .content__list--3 .content__item {
   width: calc((100% / 3) - 20px);
+}
+
+.content__list--3.content__list--partners .content__item {
+  width: calc((100% / 3) - 15px);
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
 .content__img {
@@ -1430,11 +1449,16 @@ body {
   padding: 20px 30px;
 }
 
+.content--about-us .author {
+  padding: 5px 35px 5px 15px;
+}
+
 .author__img {
   margin-right: 15px;
 }
 
-.content--search .author__img {
+.content--search .author__img,
+.content--about-us .author__img {
   margin-right: 40px;
 }
 
@@ -1485,6 +1509,11 @@ body {
 .content--search .author__name {
   margin-bottom: 6px;
   font-weight: 800;
+}
+
+.content--about-us .author__name {
+  margin-bottom: 10px;
+  line-height: 18px;
 }
 
 .form__heading {
@@ -1654,6 +1683,57 @@ body {
 .content__footer {
   margin-right: 20px;
   margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.author__contact-wrapper {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.author__contact {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--light-black);
+  margin-bottom: 10px;
+}
+
+.author__contact-list {
+  display: flex;
+  align-items: center;
+}
+.author__contact-item {
+  margin-left: 8px;
+}
+
+.content__download {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: var(--green);
+  margin: 15px 0;
+  padding-right: 65px;
+  display: block;
+}
+
+.content__download-icon {
+  margin-left: 10px;
+}
+
+.content__info {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--dark-gray);
+  padding-right: 75px;
+}
+
+.content__info-link {
+  color: var(--green);
 }
 
 /* стили для страницы поиск */
