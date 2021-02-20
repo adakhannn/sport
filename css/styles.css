@@ -136,6 +136,8 @@ body {
   background: var(--dark-white);
 }
 
+/* стили для header */
+
 .header {
   display: flex;
   flex-direction: column;
@@ -321,6 +323,8 @@ body {
   top: 0;
 }
 
+/* стили для главной */
+
 .main {
   width: 100%;
   max-width: 1280px;
@@ -354,6 +358,13 @@ body {
   padding: 40px 45px;
 }
 
+.slider__text-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
 .main-text {
   font-size: 30px;
   line-height: 44px;
@@ -364,11 +375,12 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: var(--dark-gray);
 }
 
-.slider-2 .main-text,
 .slider .main-text {
   margin-bottom: 10px;
+  color: var(--white);
 }
 
 .indicators .main-text {
@@ -401,6 +413,7 @@ body {
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 5px;
+  color: var(--white);
 }
 
 .content--about-us .main-text {
@@ -411,6 +424,14 @@ body {
 .content--search .main-text {
   font-size: 16px;
   line-height: 24px;
+}
+
+.content__list--partners .main-text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-gray);
+  margin: auto 0;
 }
 
 .text-color--white {
@@ -492,6 +513,11 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: var(--dark-gray);
+}
+
+.slider .other-text {
+  color: var(--green);
 }
 
 .content__list .other-text {
@@ -522,6 +548,14 @@ body {
 .indicators .other-text {
   font-size: 14px;
   line-height: 16px;
+}
+
+.content__list--partners .other-text {
+  font-weight: 400;
+  margin-left: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  display: inline;
 }
 
 .background-color--green {
@@ -815,19 +849,19 @@ body {
   color: var(--dark-gray);
 }
 
+.slider .date-time {
+  font-size: 30px;
+  line-height: 44px;
+  color: var(--white);
+  font-weight: 700;
+}
+
 .slider-2 .date-time {
   font-size: 20px;
   line-height: 30px;
   color: var(--white);
   font-weight: 500;
   margin-bottom: 10px;
-}
-
-.slider .date-time {
-  font-size: 30px;
-  line-height: 44px;
-  color: var(--white);
-  font-weight: 700;
 }
 
 .indicators .date-time {
@@ -1032,6 +1066,8 @@ body {
   padding: 0 20px 20px 0;
 }
 
+/* стили для сайдбара */
+
 .sidebar .ad {
   width: 100%;
   height: auto;
@@ -1076,6 +1112,11 @@ body {
   font-weight: 800;
   font-size: 24px;
   line-height: 28px;
+  color: var(--green);
+}
+
+.info--match .info__main-heading {
+  color: var(--white);
 }
 
 .info__arrow {
@@ -1522,14 +1563,10 @@ body {
   border: none;
 }
 
+/* стили для страницы о нас */
+
 .content__header {
   margin-right: 20px;
-}
-
-.slider__text-wrapper {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
 }
 
 .content__text-wrapper {
@@ -1616,24 +1653,12 @@ body {
   border: none;
 }
 
-.content__main-text {
-  text-align: center;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  color: var(--dark-gray);
-  margin: auto 0;
-}
-
-.content__other-text {
-  font-weight: 400;
-  margin-left: 5px;
-}
-
 .content__footer {
   margin-right: 20px;
   margin-bottom: 15px;
 }
+
+/* стили для страницы поиск */
 
 .selection {
   background-color: var(--light-orange);
@@ -1644,6 +1669,8 @@ body {
   right: 15px;
   top: calc(50% - 20px);
 }
+
+/* стили для footer */
 
 .footer {
   width: 100%;
