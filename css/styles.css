@@ -92,6 +92,7 @@ html {
   --light-blue: #56CCF2;
   --black: #000000;
   --gainsboro: #CCCCCC;
+  --silver: #999999;
 }
 
 /* применение var(--color-blue); */
@@ -1494,7 +1495,7 @@ body {
   margin-bottom: 7px;
 }
 
-.form__group {
+.info .form__group {
   margin: 7px 0;
 }
 
@@ -1513,16 +1514,13 @@ body {
   user-select: none;
 }
 
-.form__input {
+.info .form__input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
 .content--search .form__input {
-  position: static;
-  z-index: 2;
-  opacity: 1;
   width: 100%;
   font-weight: 500;
   font-size: 14px;
@@ -1807,4 +1805,176 @@ body {
 .footer__info-link {
   color: var(--green);
   text-decoration: underline;
+}
+
+/* стили для страниц входа , регистрации */
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto 0;
+  width: 465px;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 25px 45px;
+  text-align: center;
+  color: var(--light-black);
+  position: relative;
+}
+
+.login__logo {
+  margin-bottom: 7px;
+}
+
+.login__heading {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 45px;
+}
+
+.login--recovery .login__heading {
+  margin-bottom: 20px;
+}
+
+.login__main-text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+.login__other-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--silver);
+  margin-bottom: 10px;
+}
+
+.login--sign-up .login__other-text {
+  padding: 0 40px;
+}
+
+.login--check-in .login__other-text {
+  text-align: left;
+}
+
+.login__socials {
+  display: flex;
+  width: 100%;
+  padding: 0 25px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.login--check-in .login__socials {
+  margin-top: 15px;
+}
+
+.login__link-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 15px 0 25px;
+}
+
+.login__link {
+  text-decoration: underline;
+  color: var(--light-black);
+  margin-left: 5px;
+}
+
+.login .form {
+  display: flex;
+  flex-direction: column;
+  width: 335px;
+  margin: 0 auto;
+}
+
+.login .form__group {
+  width: 100%;
+}
+
+.login .form__input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid var(--gainsboro);
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.login .form__help {
+  font-size: 12px;
+  padding: 5px 0;
+  color: var(--red);
+  min-height: 20px;
+  font-weight: 700;
+  opacity: 1;
+  text-align: left;
+}
+
+.login .button {
+  width: 100%;
+  background: var(--green);
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--white);
+  padding: 10px;
+  border: none;
+}
+
+.login--sign-up .button {
+  margin-bottom: 12px;
+}
+
+.login .form__forgot-password {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: underline;
+  color: var(--light-black);
+}
+
+.login__closed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.login__closed span {
+  width: 20px;
+  background-color: transparent;
+  height: 3px;
+  display: block;
+  position: relative;
+  border-radius: 5px;
+}
+
+.login__closed span:after,
+.login__closed span:before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  background-color: var(--black);
+  border-radius: 5px;
+}
+
+.login__closed span:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.login__closed span:after {
+  bottom: 0;
+  transform: rotate(-45deg);
 }
