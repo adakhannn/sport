@@ -53,6 +53,17 @@
   url("../fonts/raleway-extrabold.ttf") format("ttf");
 }
 
+@font-face {
+  font-family: "Architects Daughter";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('Architects Daughter Reqular'), local('Architects Daughter Reqular'),
+  url("../fonts/architectsdaughter-regular.woff2") format("woff2"),
+  url("../fonts/architectsdaughter-regular.woff") format("woff"),
+  url("../fonts/architectsdaughter-regular.ttf") format("ttf");
+}
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -135,6 +146,13 @@ body {
   flex-direction: column;
   height: 100%;
   background: var(--dark-white);
+}
+
+.body--error {
+  background-image: url('../img/error-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* стили для header */
@@ -336,6 +354,10 @@ body {
   padding: 20px 20px;
 }
 
+.body--error .main {
+  box-shadow: none;
+}
+
 .slider {
   padding-bottom: 20px;
   position: relative;
@@ -364,7 +386,6 @@ body {
   align-items: center;
   margin-bottom: 10px;
 }
-
 
 .main-text {
   font-size: 30px;
@@ -400,7 +421,8 @@ body {
   line-height: 32px;
 }
 
-.content__list--3-grid .content__item:not(:nth-child(3n+1)) .main-text {
+.content__list--3-grid .content__item:not(:nth-child(3n+1)) .main-text,
+.content__list--3 .main-text {
   font-size: 12px;
   line-height: 16px;
 }
@@ -491,6 +513,7 @@ body {
 }
 
 .content__list--3-grid .content__item:not(:nth-child(3n+1)) .cards-item,
+.content__list--3 .cards-item,
 .content--search .cards-item {
   padding: 3px 7px;
   font-size: 12px;
@@ -535,7 +558,8 @@ body {
   line-height: 24px;
 }
 
-.content__list--3-grid .content__item:not(:nth-child(3n+1)) .other-text {
+.content__list--3-grid .content__item:not(:nth-child(3n+1)) .other-text,
+.content__list--3 .other-text {
   font-size: 12px;
   line-height: 18px;
 }
@@ -593,6 +617,10 @@ body {
 
 .background-color--light-blue {
   background-color: var(--light-blue);
+}
+
+.background-color--gray {
+  background-color: var(--gray);
 }
 
 .indicators {
@@ -817,7 +845,8 @@ body {
   height: 295px;
 }
 
-.content__list--3-grid .content__item:not(:nth-child(3n+1)) .content__text-block {
+.content__list--3-grid .content__item:not(:nth-child(3n+1)) .content__text-block,
+.content__list--3 .content__text-block {
   padding: 7px 15px 15px;
   height: 145px;
 }
@@ -858,7 +887,8 @@ body {
   margin: 0;
 }
 
-.content__list--3-grid .content__item:not(:nth-child(3n+1)) .comments {
+.content__list--3-grid .content__item:not(:nth-child(3n+1)) .comments,
+.content__list--3 .comments {
   display: none;
 }
 
@@ -896,6 +926,7 @@ body {
 }
 
 .content__list--3-grid .content__item:not(:nth-child(3n+1)) .date-time,
+.content__list--3 .date-time,
 .info:not(.info--match) .date-time,
 .content--search .date-time {
   font-size: 12px;
@@ -950,7 +981,8 @@ body {
   border-radius: 5px;
 }
 
-.content__list--3-grid .content__item:not(:nth-child(3n+1)) .content__section {
+.content__list--3-grid .content__item:not(:nth-child(3n+1)) .content__section,
+.content__list--3 .content__section {
   font-weight: 700;
   font-size: 9px;
   line-height: 14px;
@@ -1748,6 +1780,64 @@ body {
   top: calc(50% - 20px);
 }
 
+/* стили для страницы 404 */
+
+.error {
+  padding: 50px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error__text {
+  margin-bottom: 25px;
+  width: 485px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.error__link {
+  padding: 15px 40px;
+  background-color: var(--green);
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+  z-index: 2;
+}
+
+.error__logo {
+  margin: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.error__404 {
+  font-family: "Architects Daughter", sans-serif;
+  font-size: 310px;
+  line-height: 260px;
+  color: var(--white);
+  opacity: 0.1;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.error .main-text {
+  line-height: 35px;
+  color: var(--white);
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--green);
+  margin-bottom: 40px;
+  align-self: flex-start;
+  width: 100%;
+}
+
 /* стили для footer */
 
 .footer {
@@ -1764,6 +1854,10 @@ body {
   display: flex;
   padding: 65px 35px 30px 60px;
   justify-content: space-between;
+}
+
+.body--error .footer {
+  background-color: initial;
 }
 
 .footer__contact {
