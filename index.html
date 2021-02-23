@@ -12,14 +12,11 @@
 <body>
 <header class="header">
   <div class="header__top">
-    <div class="header__wrapper js-header">
+    <div class="header__wrapper">
       <nav class="menu menu--top js-menu">
         <ul class="menu__list">
           <li class="menu__item menu__item--active">
-            <a class="menu__link" href="#">Новости</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="#">Статьи</a>
+            <a class="menu__link" href="#">Все Новости</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="#">Блоги</a>
@@ -29,6 +26,14 @@
           </li>
         </ul>
       </nav>
+      <a class="header__search" href="search.html">
+        <img class="header__search-icon" src="../sport/img/search.svg" width="20" height="20" alt="Поиск">
+        <p class="header__search-text">Поиск</p>
+      </a>
+      <a class="header__input" href="#">
+        <p class="header__input-text">Вход</p>
+        <img class="header__input-icon" src="../sport/img/input.svg" width="20p" height="20" alt="Вход">
+      </a>
       <ul class="socials">
         <li class="socials__item">
           <a class="socials__link" href="#">
@@ -56,14 +61,6 @@
           </a>
         </li>
       </ul>
-      <a class="header__search" href="search.html">
-        <img class="header__search-icon" src="../sport/img/search.svg" width="20" height="20" alt="Поиск">
-        <p class="header__search-text">Поиск</p>
-      </a>
-      <a class="header__input" href="#">
-        <p class="header__input-text">Вход</p>
-        <img class="header__input-icon" src="../sport/img/input.svg" width="20p" height="20" alt="Вход">
-      </a> 
     </div>
   </div>
   <div class="header__bottom">
@@ -96,7 +93,40 @@
           </li>
         </ul>
       </nav>
-      <button class="header__burger js-hamburger"><span></span></button>
+      <div class="header__burger-wrapper js-header">
+        <button class="header__burger js-hamburger"><span></span></button>
+        <nav class="menu-burger js-main-menu">
+          <ul class="menu-burger__list">
+            <li class="menu-burger__item">
+              <a class="menu-burger__link" href="#">РПЛ</a>
+            </li>
+            <li class="menu-burger__item">
+              <a class="menu-burger__link" href="#">Бундеслига</a>
+            </li>
+            <li class="menu-burger__item">
+              <a class="menu-burger__link" href="#">АПЛ</a>
+            </li>
+            <li class="menu-burger__item">
+              <a class="menu-burger__link" href="#">Серия А</a>
+            </li>
+            <li class="menu-burger__item">
+              <a class="menu-burger__link" href="#">Ла Лига</a>
+            </li>
+            <li class="menu-burger__item">
+              <a class="menu-burger__link" href="#">Лига Чемпионов</a>
+            </li>
+            <li class="menu-burger__item">
+              <a class="menu-burger__link" href="#">Лига Европы</a>
+            </li>
+            <li class="menu-burger__item">
+              <a class="menu-burger__link" href="#">ЧЕ-2020</a>
+            </li>
+            <li class="menu-burger__item">
+              <a class="menu-burger__link" href="#">ЧМ-2020</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </div>
   <a class="header__logo" href="about-us.html">
@@ -125,6 +155,7 @@
             <h1 class="main-text">«Лестер» – «Манчестер Юнайтед»: расклады, составы, ставки и прогноз на матч 26 декабря</h1>
             <p class="other-text">«Лестер» – «Манчестер Юнайтед»: суббота, 26 декабря, 15:30 мск</p>
           </div>
+          <p class="content__section text-color--white">ТОП</p>
         </a>
       </li>
       <li class="slider__item">
@@ -135,6 +166,7 @@
             <h1 class="main-text">«Лестер» – «Манчестер Юнайтед»: расклады, составы, ставки и прогноз на матч 26 декабря</h1>
             <p class="other-text">«Лестер» – «Манчестер Юнайтед»: суббота, 26 декабря, 15:30 мск</p>
           </div>
+          <p class="content__section text-color--white">Эксклюзив</p>
         </a>
       </li>
       <li class="slider__item">
