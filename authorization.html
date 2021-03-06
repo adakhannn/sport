@@ -11,18 +11,20 @@
 <!--Максимальный размер контентного изрбражения 1240*697-->
 <!--Максимальный размер рекламного изрбражения 860*486-->
 <!--Максимальный размер фотки автора 100*100-->
-<a href="index.html">Ссылка на страницу поиск</a>
+<a href="index.html">Ссылка на страницу Главная</a>
 <a href="search.html">Ссылка на страницу поиск</a>
 <a href="error.html">Ссылка на страницу 404</a>
 <a href="cabinet.html">Ссылка на страницу Личный кабинет</a>
 <a href="about-us.html">Ссылка на страницу О нас</a>
 <a href="quizzes.html">Ссылка на страницу Опросы</a>
 <a href="authorization.html">Ссылка на страницу Авторизация</a>
-<header class="header"></header>
+<a href="media.html">Ссылка на страницу Медии</a>
 <main class="main">
   <div class="login login--sign-up">
     <a class="login__logo-link" href="#">
-      <img class="login__logo" src="../sport/img/login-logo.svg" width="85px" height="85px" alt="Логотип">
+      <svg class="login__logo" width="85" height="85">
+        <use xlink:href="../sport/img/sprite.svg#mini-logo"></use>
+      </svg>
     </a>
     <h1 class="login__heading">Вход на сайт</h1>
     <p class="login__main-text">Войти как пользователь:</p>
@@ -30,31 +32,41 @@
     <ul class="login__socials">
       <li class="login__socials-item">
         <a class="login__socials-link" href="#">
-          <img class="login__socials-icon" src="../sport/img/vk-color.svg" width="45" height="31" alt="Вконтакте">
+          <svg class="login__socials-icon" width="45" height="31">
+            <use xlink:href="../sport/img/sprite.svg#vk-color"></use>
+          </svg>
         </a>
       </li>
       <li class="login__socials-item">
         <a class="login__socials-link" href="#">
-          <img class="login__socials-icon" src="../sport/img/facebook-color.svg" width="45" height="31" alt="Фейсбук">
+          <svg class="login__socials-icon" width="45" height="31">
+            <use xlink:href="../sport/img/sprite.svg#fb-color"></use>
+          </svg>
         </a>
       </li>
       <li class="login__socials-item">
-        <img class="login__socials-icon" src="../sport/img/google-color.svg" width="45" height="31" alt="Гугл">
+        <svg class="login__socials-icon" width="45" height="31">
+          <use xlink:href="../sport/img/sprite.svg#google-color"></use>
+        </svg>
       </li>
       <li class="login__socials-item">
         <a class="login__socials-link" href="#">
-          <img class="login__socials-icon" src="../sport/img/ok-color.svg" width="45" height="31" alt="Одноклассники">
+          <svg class="login__socials-icon" width="45" height="31">
+            <use xlink:href="../sport/img/sprite.svg#ok-color"></use>
+          </svg>
         </a>
       </li>
       <li class="login__socials-item">
         <a class="login__socials-link" href="#">
-          <img class="login__socials-icon" src="../sport/img/mail-color.svg" width="45" height="31" alt="Майл.ру">
+          <svg class="login__socials-icon" width="45" height="31">
+            <use xlink:href="../sport/img/sprite.svg#mail-color"></use>
+          </svg>
         </a>
       </li>
     </ul>
     <p class="login__main-text">Или войти по логину sportsdaily.ru</p>
     <p class="login__link-text">У вас еще нет логина?<a class="login__link" href="#">Зарегистрируйтесь!</a></p>
-    <form class="form" action="">
+    <form class="form--login" action="">
       <div class="form__group">
         <input class="form__input" placeholder="Логин" type="text" name="name" required="1">
         <div class="form__help">Необходимо заполнить «Логин»</div>
@@ -70,38 +82,50 @@
   </div>
   <div class="login login--check-in">
     <a class="login__logo-link" href="#">
-      <img class="login__logo" src="../sport/img/login-logo.svg" width="85px" height="85px" alt="Логотип">
+      <svg class="login__logo" width="85" height="85">
+        <use xlink:href="../sport/img/sprite.svg#mini-logo"></use>
+      </svg>
     </a>
     <h1 class="login__heading">Регистрация на сайте</h1>
     <p class="login__main-text">Зарегистрироваться как пользователь:</p>
     <ul class="login__socials">
       <li class="login__socials-item">
         <a class="login__socials-link" href="#">
-          <img class="login__socials-icon" src="../sport/img/vk-color.svg" width="45" height="31" alt="Вконтакте">
+          <svg class="login__socials-icon" width="45" height="31">
+            <use xlink:href="../sport/img/sprite.svg#vk-color"></use>
+          </svg>
         </a>
       </li>
       <li class="login__socials-item">
         <a class="login__socials-link" href="#">
-          <img class="login__socials-icon" src="../sport/img/facebook-color.svg" width="45" height="31" alt="Фейсбук">
+          <svg class="login__socials-icon" width="45" height="31">
+            <use xlink:href="../sport/img/sprite.svg#fb-color"></use>
+          </svg>
         </a>
       </li>
       <li class="login__socials-item">
-        <img class="login__socials-icon" src="../sport/img/google-color.svg" width="45" height="31" alt="Гугл">
+        <svg class="login__socials-icon" width="45" height="31">
+          <use xlink:href="../sport/img/sprite.svg#google-color"></use>
+        </svg>
       </li>
       <li class="login__socials-item">
         <a class="login__socials-link" href="#">
-          <img class="login__socials-icon" src="../sport/img/ok-color.svg" width="45" height="31" alt="Одноклассники">
+          <svg class="login__socials-icon" width="45" height="31">
+            <use xlink:href="../sport/img/sprite.svg#ok-color"></use>
+          </svg>
         </a>
       </li>
       <li class="login__socials-item">
         <a class="login__socials-link" href="#">
-          <img class="login__socials-icon" src="../sport/img/mail-color.svg" width="45" height="31" alt="Майл.ру">
+          <svg class="login__socials-icon" width="45" height="31">
+            <use xlink:href="../sport/img/sprite.svg#mail-color"></use>
+          </svg>
         </a>
       </li>
     </ul>
     <p class="login__main-text">Зарегистрироваться по E-mail</p>
     <p class="login__link-text">Уже есть логин?<a class="login__link" href="#">Входите!</a></p>
-    <form class="form" action="">
+    <form class="form--login" action="">
       <div class="form__group">
         <input class="form__input" placeholder="Логин" type="text" name="name" required="1">
         <div class="form__help">Необходимо заполнить «Логин»</div>
@@ -125,10 +149,12 @@
   </div>
   <div class="login">
     <a class="login__logo-link" href="#">
-      <img class="login__logo" src="../sport/img/login-logo.svg" width="85px" height="85px" alt="Логотип">
+      <svg class="login__logo" width="85" height="85">
+        <use xlink:href="../sport/img/sprite.svg#mini-logo"></use>
+      </svg>
     </a>
     <h1 class="login__heading">Восстановление пароля</h1>
-    <form class="form" action="">
+    <form class="form--login" action="">
       <div class="form__group">
         <input class="form__input" placeholder="Логин или e-mail" type="text" name="name" required="1">
         <div class="form__help">Необходимо заполнить «Логин или e-mail»</div>
@@ -139,7 +165,9 @@
   </div>
   <div class="login">
     <a class="login__logo-link" href="#">
-      <img class="login__logo" src="../sport/img/login-logo.svg" width="85px" height="85px" alt="Логотип">
+      <svg class="login__logo" width="85" height="85">
+        <use xlink:href="../sport/img/sprite.svg#mini-logo"></use>
+      </svg>
     </a>
     <h1 class="login__heading">Восстановление пароля</h1>
     <p class="login__link-text">Сообщение отправлено на ваш email адрес</p>
@@ -147,7 +175,9 @@
   </div>
   <div class="login">
     <a class="login__logo-link" href="#">
-      <img class="login__logo" src="../sport/img/login-logo.svg" width="85px" height="85px" alt="Логотип">
+      <svg class="login__logo" width="85" height="85">
+        <use xlink:href="../sport/img/sprite.svg#mini-logo"></use>
+      </svg>
     </a>
     <h1 class="login__heading">Регистрация на сайте</h1>
     <p class="login__link-text">На ваш почтовый ящик будет отправлено подтверждающее письмо. Перейдите по ссылке из письма для завершения регистрации.</p>
@@ -155,7 +185,9 @@
   </div>
   <div class="login">
     <a class="login__logo-link" href="#">
-      <img class="login__logo" src="../sport/img/login-logo.svg" width="85px" height="85px" alt="Логотип">
+      <svg class="login__logo" width="85" height="85">
+        <use xlink:href="../sport/img/sprite.svg#mini-logo"></use>
+      </svg>
     </a>
     <h1 class="login__heading">Изменение почты</h1>
     <p class="login__link-text">На почту, указанную ранее, будет отправлена ссылка на форму изменения e-mail.</p>
@@ -163,7 +195,9 @@
   </div>
   <div class="login">
     <a class="login__logo-link" href="#">
-      <img class="login__logo" src="../sport/img/login-logo.svg" width="85px" height="85px" alt="Логотип">
+      <svg class="login__logo" width="85" height="85">
+        <use xlink:href="../sport/img/sprite.svg#mini-logo"></use>
+      </svg>
     </a>
     <h1 class="login__heading">Изменение пароля</h1>
     <p class="login__link-text">На вашу почту будет отправлена ссылка на изменение пароля.</p>

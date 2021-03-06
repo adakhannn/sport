@@ -1,3 +1,11 @@
+$(document).ready(function(){
+    $('.grid').masonry({
+        itemSelector: '.quizzes__item',
+        columnWidth: 420,
+        gutter: 20,
+    });
+});
+
 $(document).ready(function() {
 
     frontend.isMobile = $('body').outerWidth() < 481;
@@ -26,6 +34,32 @@ if(menuMobile) {
         evt.preventDefault();
         hamburger.classList.toggle("open");
         menuMobile.classList.toggle("open");
+    });
+}
+
+var search = document.querySelector(".js-search");
+var searchInput = document.querySelector(".js-search-input");
+
+if(searchInput) {
+    searchInput.classList.add("hidden");
+    search.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        search.classList.toggle("open");
+        searchInput.classList.toggle("open");
+    });
+}
+
+var login = document.querySelector(".js-login");
+var pushUp = document.querySelector(".js-push-up");
+var pushUpBody = document.querySelector(".js-push-up-body");
+
+if(pushUp) {
+    pushUp.classList.add("hidden");
+    login.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        login.classList.toggle("show");
+        pushUp.classList.toggle("show");
+        pushUpBody.classList.toggle("show");
     });
 }
 
@@ -449,4 +483,3 @@ var frontend = new function() {
         this.callbacks = {};
     };
 };
-
