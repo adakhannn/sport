@@ -556,11 +556,14 @@ body.show:before {
 
 .menu-burger__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   background-color: var(--white);
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  padding: 10px 45px 15px 15px;
+  padding: 10px 15px;
+  border-left: 7px solid var(--green);
+  max-height: 490px;
 }
 
 .menu-burger__item {
@@ -575,7 +578,6 @@ body.show:before {
 }
 
 .menu-burger__link {
-  display: block;
   padding: 5px 10px;
   font-weight: 600;
   font-size: 20px;
@@ -585,6 +587,14 @@ body.show:before {
   width: 100%;
   border-radius: 5px;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.menu-burger__img {
+  margin-right: 10px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 /* стили для главной */
