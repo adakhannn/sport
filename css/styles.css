@@ -3125,7 +3125,7 @@ body.show:before {
   text-decoration: underline;
 }
 
-/* стили для страниц входа , регистрации */
+/* стили для страниц входа , регистрации и куки */
 
 .login.js-push-up {
   display: none;
@@ -3273,14 +3273,14 @@ body.show:before {
   color: var(--light-black);
 }
 
-.login__closed {
+.closed {
   position: absolute;
   top: 0;
   right: 0;
   padding: 20px;
 }
 
-.login__closed span {
+.closed span {
   width: 20px;
   background-color: transparent;
   height: 3px;
@@ -3289,8 +3289,8 @@ body.show:before {
   border-radius: 5px;
 }
 
-.login__closed span:after,
-.login__closed span:before {
+.closed span:after,
+.closed span:before {
   content: "";
   position: absolute;
   display: block;
@@ -3301,14 +3301,52 @@ body.show:before {
   border-radius: 5px;
 }
 
-.login__closed span:before {
+.closed--white span:after,
+.closed--white span:before {
+  background-color: var(--white);
+}
+
+.closed span:before {
   top: 0;
   transform: rotate(45deg);
 }
 
-.login__closed span:after {
+.closed span:after {
   bottom: 0;
   transform: rotate(-45deg);
+}
+
+.cookies {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  margin: 30px 0;
+}
+
+.cookies__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  padding: 60px 20px 45px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.cookies__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--white);
+  margin-bottom: 25px;
+}
+
+.cookies__link {
+  color: var(--green);
+  padding: 0 5px;
+  text-decoration: underline;
+}
+
+.cookies__closed {
 }
 
 @media (max-width: 1820px) {
