@@ -40,18 +40,18 @@
           </form>
         </div>
         <div class="pagination-wrapper">
-          <section class="tabs--border">
-            <ul class="tabs__navigation">
-              <li class="tabs__item tabs__item--active">
+          <section class="tabs tabs--border">
+            <ul class="tabs__navigation js-tabs" data-cont-id="tabs-content">
+              <li class="tabs__item tabs__item--active" data-tab-id="tab-1">
                 <a class="tabs__link">Все материалы<span class="tabs__link-number">(225)</span></a>
               </li>
-              <li class="tabs__item">
+              <li class="tabs__item" data-tab-id="tab-2">
                 <a class="tabs__link">Новости<span class="tabs__link-number">(132)</span></a>
               </li>
-              <li class="tabs__item">
+              <li class="tabs__item" data-tab-id="tab-3">
                 <a class="tabs__link">Статьи<span class="tabs__link-number">(75)</span></a>
               </li>
-              <li class="tabs__item">
+              <li class="tabs__item" data-tab-id="tab-4">
                 <a class="tabs__link">Блоги<span class="tabs__link-number">(1)</span></a>
               </li>
             </ul>
@@ -83,58 +83,174 @@
             </li>
           </ul>
         </div>
-        <ul class="media media--search">
-          <li class="media__item">
-            <a class="media__author" href="#">
-              <img class="media__author-img" src="../sport/img/dev-author.png" width="65" height="65" alt="Фото автора">
-              <div class="media__name-block">
-                <p class="media__author-name">Блог Александра Макарова<span class="selection">Блог</span>Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра МакароваБлог Александра Макарова</p>
-                <p class="media__author-description">Специальный корреспондент «Спорта День за Днем» Спец<span class="selection">иальный корр</span>еспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем»</p>
-              </div>
-            </a>
-          </li>
-          <li class="media__item">
-            <a class="media__author" href="#">
-              <img class="media__author-img" src="../sport/img/dev-author.png" width="65" height="65" alt="Фото автора">
-              <div class="media__name-block">
-                <p class="media__author-name">Блог Александра Макарова<span class="selection">Блог</span>Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра МакароваБлог Александра Макарова</p>
-                <p class="media__author-description">Специальный корреспондент «Спорта День за Днем» Спец<span class="selection">иальный корр</span>еспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем»</p>
-              </div>
-            </a>
-          </li>
-          <li class="media__item">
-            <a class="media__link" href="#">
-              <div class="media__text-block">
-                <div class="media__text-wrapper">
-                  <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                  <ul class="tags">
-                    <li class="tags__item">Топ</li>
-                    <li class="tags__item">Футбол</li>
-                  </ul>
-                </div>
-                <p class="media__text">
-                  Интервью Деяна Ловрена Kicker: провал России в <span class="selection">еврокубках</span>, почему выбрал «Зенит», за что хотел ударить Рамоса
-                </p>
-              </div>
-            </a>
-          </li>
-          <li class="media__item">
-            <a class="media__link" href="#">
-              <div class="media__text-block">
-                <div class="media__text-wrapper">
-                  <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                  <ul class="tags">
-                    <li class="tags__item">Топ</li>
-                    <li class="tags__item">Футбол</li>
-                  </ul>
-                </div>
-                <p class="media__text">
-                  Интервью Деяна Ловрена Kicker: провал России в еврокубках, <span class="selection">почему</span> выбрал «Зенит», за что хотел ударить Рамоса Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
-                </p>
-              </div>
-            </a>
-          </li>
-        </ul>
+        <div class="tabs__content" id="tabs-content">
+          <div class="tabs__pane js-tab-cont js-show tabs__pane--active" id="tab-1">
+            <ul class="media media--search">
+              <li class="media__item">
+                <a class="media__author" href="#">
+                  <img class="media__author-img" src="../sport/img/dev-author.png" width="65" height="65" alt="Фото автора">
+                  <div class="media__name-block">
+                    <p class="media__author-name">Блог Александра Макарова<span class="selection">Блог</span>Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра МакароваБлог Александра Макарова</p>
+                    <p class="media__author-description">Специальный корреспондент «Спорта День за Днем» Спец<span class="selection">иальный корр</span>еспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем»</p>
+                  </div>
+                </a>
+              </li>
+              <li class="media__item">
+                <a class="media__author" href="#">
+                  <img class="media__author-img" src="../sport/img/dev-author.png" width="65" height="65" alt="Фото автора">
+                  <div class="media__name-block">
+                    <p class="media__author-name">Блог Александра Макарова<span class="selection">Блог</span>Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра МакароваБлог Александра Макарова</p>
+                    <p class="media__author-description">Специальный корреспондент «Спорта День за Днем» Спец<span class="selection">иальный корр</span>еспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем»</p>
+                  </div>
+                </a>
+              </li>
+              <li class="media__item">
+                <a class="media__link" href="#">
+                  <div class="media__text-block">
+                    <div class="media__text-wrapper">
+                      <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                      <ul class="tags">
+                        <li class="tags__item">Топ</li>
+                        <li class="tags__item">Футбол</li>
+                      </ul>
+                    </div>
+                    <p class="media__text">
+                      Интервью Деяна Ловрена Kicker: провал России в <span class="selection">еврокубках</span>, почему выбрал «Зенит», за что хотел ударить Рамоса
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="media__item">
+                <a class="media__link" href="#">
+                  <div class="media__text-block">
+                    <div class="media__text-wrapper">
+                      <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                      <ul class="tags">
+                        <li class="tags__item">Топ</li>
+                        <li class="tags__item">Футбол</li>
+                      </ul>
+                    </div>
+                    <p class="media__text">
+                      Интервью Деяна Ловрена Kicker: провал России в еврокубках, <span class="selection">почему</span> выбрал «Зенит», за что хотел ударить Рамоса Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__pane js-tab-cont" id="tab-2">
+            <ul class="media media--search">
+              <li class="media__item">
+                <a class="media__link" href="#">
+                  <div class="media__text-block">
+                    <div class="media__text-wrapper">
+                      <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                      <ul class="tags">
+                        <li class="tags__item">Топ</li>
+                        <li class="tags__item">Футбол</li>
+                      </ul>
+                    </div>
+                    <p class="media__text">
+                      Интервью Деяна Ловрена Kicker: провал России в <span class="selection">еврокубках</span>, почему выбрал «Зенит», за что хотел ударить Рамоса
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="media__item">
+                <a class="media__link" href="#">
+                  <div class="media__text-block">
+                    <div class="media__text-wrapper">
+                      <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                      <ul class="tags">
+                        <li class="tags__item">Топ</li>
+                        <li class="tags__item">Футбол</li>
+                      </ul>
+                    </div>
+                    <p class="media__text">
+                      Интервью Деяна Ловрена Kicker: провал России в еврокубках, <span class="selection">почему</span> выбрал «Зенит», за что хотел ударить Рамоса Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__pane js-tab-cont" id="tab-3">
+            <ul class="media media--search">
+              <li class="media__item">
+                <a class="media__author" href="#">
+                  <img class="media__author-img" src="../sport/img/dev-author.png" width="65" height="65" alt="Фото автора">
+                  <div class="media__name-block">
+                    <p class="media__author-name">Блог Александра Макарова<span class="selection">Блог</span>Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра МакароваБлог Александра Макарова</p>
+                    <p class="media__author-description">Специальный корреспондент «Спорта День за Днем» Спец<span class="selection">иальный корр</span>еспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем»</p>
+                  </div>
+                </a>
+              </li>
+              <li class="media__item">
+                <a class="media__author" href="#">
+                  <img class="media__author-img" src="../sport/img/dev-author.png" width="65" height="65" alt="Фото автора">
+                  <div class="media__name-block">
+                    <p class="media__author-name">Блог Александра Макарова<span class="selection">Блог</span>Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра МакароваБлог Александра Макарова</p>
+                    <p class="media__author-description">Специальный корреспондент «Спорта День за Днем» Спец<span class="selection">иальный корр</span>еспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем»</p>
+                  </div>
+                </a>
+              </li>
+              <li class="media__item">
+                <a class="media__link" href="#">
+                  <div class="media__text-block">
+                    <div class="media__text-wrapper">
+                      <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                      <ul class="tags">
+                        <li class="tags__item">Топ</li>
+                        <li class="tags__item">Футбол</li>
+                      </ul>
+                    </div>
+                    <p class="media__text">
+                      Интервью Деяна Ловрена Kicker: провал России в <span class="selection">еврокубках</span>, почему выбрал «Зенит», за что хотел ударить Рамоса
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="media__item">
+                <a class="media__link" href="#">
+                  <div class="media__text-block">
+                    <div class="media__text-wrapper">
+                      <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                      <ul class="tags">
+                        <li class="tags__item">Топ</li>
+                        <li class="tags__item">Футбол</li>
+                      </ul>
+                    </div>
+                    <p class="media__text">
+                      Интервью Деяна Ловрена Kicker: провал России в еврокубках, <span class="selection">почему</span> выбрал «Зенит», за что хотел ударить Рамоса Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="tabs__pane js-tab-cont" id="tab-4">
+            <ul class="media media--search">
+              <li class="media__item">
+                <a class="media__author" href="#">
+                  <img class="media__author-img" src="../sport/img/dev-author.png" width="65" height="65" alt="Фото автора">
+                  <div class="media__name-block">
+                    <p class="media__author-name">Блог Александра Макарова<span class="selection">Блог</span>Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра МакароваБлог Александра Макарова</p>
+                    <p class="media__author-description">Специальный корреспондент «Спорта День за Днем» Спец<span class="selection">иальный корр</span>еспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем»</p>
+                  </div>
+                </a>
+              </li>
+              <li class="media__item">
+                <a class="media__author" href="#">
+                  <img class="media__author-img" src="../sport/img/dev-author.png" width="65" height="65" alt="Фото автора">
+                  <div class="media__name-block">
+                    <p class="media__author-name">Блог Александра Макарова<span class="selection">Блог</span>Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра Макарова Блог Александра МакароваБлог Александра Макарова</p>
+                    <p class="media__author-description">Специальный корреспондент «Спорта День за Днем» Спец<span class="selection">иальный корр</span>еспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем» Специальный корреспондент «Спорта День за Днем»</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
         <ul class="pagination pagination--bottom">
           <li class="pagination__item pagination__item--active">
             <a class="pagination__link" href="#">1</a>
@@ -165,4 +281,8 @@
     </div>
   </div>
 </main>
+<script src="plugins/jquery-3.4.1.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/scripts.js" type="text/javascript"></script>
+</body>
 </html>

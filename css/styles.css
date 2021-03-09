@@ -1570,6 +1570,7 @@ body.show:before {
 
 .info__main--long {
   height: 760px;
+  display: none;
 }
 
 .info__main--medium {
@@ -1785,7 +1786,6 @@ body.show:before {
 
 .redaction {
   margin-top: 30px;
-  display: none;
 }
 
 .heading-medium {
@@ -1882,7 +1882,6 @@ body.show:before {
 
 .requisites {
   margin-top: 30px;
-  display: none;
 }
 
 .requisites__list {
@@ -1990,7 +1989,6 @@ body.show:before {
 
 .partners {
   margin-top: 30px;
-  display: none;
 }
 
 .partners__list {
@@ -2212,18 +2210,18 @@ body.show:before {
 
 /* стили для Личного кабинета */
 
-.breadcrгmbs {
+.breadcrumbs {
   display: flex;
   margin-bottom: 20px;
 }
 
-.breadcrгmbs__item {
+.breadcrumbs__item {
   padding-right: 20px;
   display: flex;
   align-items: center;
 }
 
-.breadcrгmbs__link {
+.breadcrumbs__link {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 19px;
@@ -2238,15 +2236,15 @@ body.show:before {
   position: relative;
 }
 
-.breadcrгmbs__item:last-child .breadcrгmbs__link {
+.breadcrumbs__item:last-child .breadcrumbs__link {
   color: var(--dark-gray);
 }
 
-.breadcrгmbs__item:last-child::after {
+.breadcrumbs__item:last-child::after {
   display: none;
 }
 
-.breadcrгmbs__item::after {
+.breadcrumbs__item::after {
   content: '/';
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
@@ -2336,7 +2334,6 @@ body.show:before {
 
 .profile {
   padding-top: 25px;
-  display: none;
 }
 
 .profile__like {
@@ -2363,7 +2360,6 @@ body.show:before {
 
 .comments {
   margin-top: 45px;
-  display: none;
 }
 
 .comments__list {
@@ -2460,7 +2456,6 @@ body.show:before {
 
 .settings {
   margin-top: 55px;
-  display: none;
 }
 
 .form--settings {
@@ -3353,7 +3348,8 @@ body.show:before {
   text-decoration: underline;
 }
 
-.cookies__closed {
+.tabs__pane {
+  display: none;
 }
 
 .tabs__pane--active {

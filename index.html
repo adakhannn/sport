@@ -1234,14 +1234,14 @@
                 <use xlink:href="../sport/img/sprite.svg#calendar"></use>
               </svg>
               <section class="tabs tabs--square">
-                <ul class="tabs__navigation js-tabs" data-cont-id="tabs-content">
-                  <li class="tabs__item" data-tab-id="yesterday-match">
+                <ul class="tabs__navigation js-tabs" data-cont-id="tabs-content-match">
+                  <li class="tabs__item" data-tab-id="tab-match-1">
                     <a class="tabs__link">Вчера(11)</a>
                   </li>
-                  <li class="tabs__item tabs__item--active" data-tab-id="today-match">
+                  <li class="tabs__item tabs__item--active" data-tab-id="tab-match-2">
                     <a class="tabs__link">Сегодня(31)</a>
                   </li>
-                  <li class="tabs__item" data-tab-id="tomorrow-match">
+                  <li class="tabs__item" data-tab-id="tab-match-3">
                     <a class="tabs__link">Завтра(18)</a>
                   </li>
                 </ul>
@@ -1250,8 +1250,8 @@
             </div>
           </div>
         </div>
-        <div class="match__content" id="tabs-content">
-          <div class="match__main js-tab-cont" id="yesterday-match">
+        <div class="match__content" id="tabs-content-match">
+          <div class="match__main js-tab-cont" id="tab-match-1">
             <ul class="match__tourney-list">
               <li class="match__tourney-item">
                 <a class="match__tourney-link" href="#">
@@ -1503,7 +1503,7 @@
               </li>
             </ul>
           </div>
-          <div class="match__main js-tab-cont js-show tabs__pane--active" id="today-match">
+          <div class="match__main js-tab-cont js-show tabs__pane--active" id="tab-match-2">
             <ul class="match__tourney-list">
               <li class="match__tourney-item">
                 <a class="match__tourney-link" href="#">
@@ -1815,7 +1815,7 @@
               </li>
             </ul>
           </div>
-          <div class="match__main js-tab-cont" id="tomorrow-match">
+          <div class="match__main js-tab-cont" id="tab-match-3">
             <ul class="match__tourney-list">
               <li class="match__tourney-item">
                 <a class="match__tourney-link" href="#">
@@ -2142,92 +2142,170 @@
           </a>
           <div class="info__filter">
             <section class="tabs tabs--square tabs--margin">
-              <ul class="tabs__navigation">
-                <li class="tabs__item tabs__item--active">
+              <ul class="tabs__navigation js-tabs" data-cont-id="tabs-content-news">
+                <li class="tabs__item tabs__item--active" data-tab-id="tab-news-1">
                   <a class="tabs__link">Все</a>
                 </li>
-                <li class="tabs__item">
+                <li class="tabs__item" data-tab-id="tab-news-2">
                   <a class="tabs__link">Топ</a>
                 </li>
               </ul>
             </section>
           </div>
         </div>
-        <div class="info__main info__main--long">
-          <ul class="info__list">
-            <li class="info__item">
-              <a class="info__link info__link--height-175" href="#">
-                <ul class="tags tags--medium">
-                  <li class="tags__item">Топ</li>
-                  <li class="tags__item">Футбол</li>
-                </ul>
-                <p class="info__text">
-                  Интервью Деяна Ловрена Kicker: провал России Интервью Деяна Ловрена Kicker: провал России Интервью Деяна Ловрена Kicker: провал России
-                </p>
-                <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
-              </a>
-            </li>
-            <li class="info__item">
-              <a class="info__link info__link--height-175" href="#">
-                <ul class="tags tags--medium">
-                  <li class="tags__item">Топ</li>
-                  <li class="tags__item">Футбол</li>
-                </ul>
-                <p class="info__text">
-                  Интервью Деяна Ловрена Kicker: провал России
-                </p>
-                <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
-              </a>
-            </li>
-            <li class="info__item">
-              <a class="info__link info__link--height-175" href="#">
-                <ul class="tags tags--medium">
-                  <li class="tags__item">Топ</li>
-                  <li class="tags__item">Футбол</li>
-                </ul>
-                <p class="info__text">
-                  Интервью Деяна Ловрена Kicker: провал России
-                </p>
-                <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
-              </a>
-            </li>
-            <li class="info__item">
-              <a class="info__link info__link--height-175" href="#">
-                <ul class="tags tags--medium">
-                  <li class="tags__item">Топ</li>
-                  <li class="tags__item">Футбол</li>
-                </ul>
-                <p class="info__text">
-                  Интервью Деяна Ловрена Kicker: провал России
-                </p>
-                <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
-              </a>
-            </li>
-            <li class="info__item">
-              <a class="info__link info__link--height-175" href="#">
-                <ul class="tags tags--medium">
-                  <li class="tags__item">Топ</li>
-                  <li class="tags__item">Футбол</li>
-                </ul>
-                <p class="info__text">
-                  Интервью Деяна Ловрена Kicker: провал России
-                </p>
-                <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
-              </a>
-            </li>
-            <li class="info__item">
-              <a class="info__link info__link--height-175" href="#">
-                <ul class="tags tags--medium">
-                  <li class="tags__item">Топ</li>
-                  <li class="tags__item">Футбол</li>
-                </ul>
-                <p class="info__text">
-                  Интервью Деяна Ловрена Kicker: провал России
-                </p>
-                <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
-              </a>
-            </li>
-          </ul>
+        <div class="info__content" id="tabs-content-news">
+          <div class="info__main info__main--long js-tab-cont js-show tabs__pane--active" id="tab-news-1">
+            <ul class="info__list">
+              <li class="info__item">
+                <a class="info__link info__link--height-175" href="#">
+                  <ul class="tags tags--medium">
+                    <li class="tags__item">Топ</li>
+                    <li class="tags__item">Футбол</li>
+                  </ul>
+                  <p class="info__text">
+                    Интервью Деяна Ловрена Kicker: провал России Интервью Деяна Ловрена Kicker: провал России Интервью Деяна Ловрена Kicker: провал России
+                  </p>
+                  <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link info__link--height-175" href="#">
+                  <ul class="tags tags--medium">
+                    <li class="tags__item">Топ</li>
+                    <li class="tags__item">Футбол</li>
+                  </ul>
+                  <p class="info__text">
+                    Интервью Деяна Ловрена Kicker: провал России
+                  </p>
+                  <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link info__link--height-175" href="#">
+                  <ul class="tags tags--medium">
+                    <li class="tags__item">Топ</li>
+                    <li class="tags__item">Футбол</li>
+                  </ul>
+                  <p class="info__text">
+                    Интервью Деяна Ловрена Kicker: провал России
+                  </p>
+                  <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link info__link--height-175" href="#">
+                  <ul class="tags tags--medium">
+                    <li class="tags__item">Топ</li>
+                    <li class="tags__item">Футбол</li>
+                  </ul>
+                  <p class="info__text">
+                    Интервью Деяна Ловрена Kicker: провал России
+                  </p>
+                  <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link info__link--height-175" href="#">
+                  <ul class="tags tags--medium">
+                    <li class="tags__item">Топ</li>
+                    <li class="tags__item">Футбол</li>
+                  </ul>
+                  <p class="info__text">
+                    Интервью Деяна Ловрена Kicker: провал России
+                  </p>
+                  <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link info__link--height-175" href="#">
+                  <ul class="tags tags--medium">
+                    <li class="tags__item">Топ</li>
+                    <li class="tags__item">Футбол</li>
+                  </ul>
+                  <p class="info__text">
+                    Интервью Деяна Ловрена Kicker: провал России
+                  </p>
+                  <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="info__main info__main--long js-tab-cont" id="tab-news-2">
+            <ul class="info__list">
+              <li class="info__item">
+                <a class="info__link info__link--height-175" href="#">
+                  <ul class="tags tags--medium">
+                    <li class="tags__item">Топ</li>
+                    <li class="tags__item">Футбол</li>
+                  </ul>
+                  <p class="info__text">
+                    Проверка таба.
+                  </p>
+                  <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link info__link--height-175" href="#">
+                  <ul class="tags tags--medium">
+                    <li class="tags__item">Топ</li>
+                    <li class="tags__item">Футбол</li>
+                  </ul>
+                  <p class="info__text">
+                    Интервью Деяна Ловрена Kicker: провал России
+                  </p>
+                  <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link info__link--height-175" href="#">
+                  <ul class="tags tags--medium">
+                    <li class="tags__item">Топ</li>
+                    <li class="tags__item">Футбол</li>
+                  </ul>
+                  <p class="info__text">
+                    Интервью Деяна Ловрена Kicker: провал России
+                  </p>
+                  <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link info__link--height-175" href="#">
+                  <ul class="tags tags--medium">
+                    <li class="tags__item">Топ</li>
+                    <li class="tags__item">Футбол</li>
+                  </ul>
+                  <p class="info__text">
+                    Интервью Деяна Ловрена Kicker: провал России
+                  </p>
+                  <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link info__link--height-175" href="#">
+                  <ul class="tags tags--medium">
+                    <li class="tags__item">Топ</li>
+                    <li class="tags__item">Футбол</li>
+                  </ul>
+                  <p class="info__text">
+                    Интервью Деяна Ловрена Kicker: провал России
+                  </p>
+                  <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
+                </a>
+              </li>
+              <li class="info__item">
+                <a class="info__link info__link--height-175" href="#">
+                  <ul class="tags tags--medium">
+                    <li class="tags__item">Топ</li>
+                    <li class="tags__item">Футбол</li>
+                  </ul>
+                  <p class="info__text">
+                    Интервью Деяна Ловрена Kicker: провал России
+                  </p>
+                  <p class="info__date">9.12.2020<span class="info__time">15:45</span></p>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <a class="ad" href="#">

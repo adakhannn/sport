@@ -31,18 +31,18 @@
         <a class="ad" href="#">
           <img class="ad__img" src="../sport/img/dev-ad-banner.png" width="860" height="486" alt="Рекламный баннер">
         </a>
-        <ul class="breadcrгmbs">
-          <li class="breadcrгmbs__item">
-            <a class="breadcrгmbs__link" href="#">Главная</a>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
           </li>
-          <li class="breadcrгmbs__item">
-            <a class="breadcrгmbs__link" href="#">Блоги</a>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Блоги</a>
           </li>
-          <li class="breadcrгmbs__item">
-            <a class="breadcrгmbs__link" href="#">Брат Нурмагомедова проведёт бой завтра</a>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Брат Нурмагомедова проведёт бой завтра</a>
           </li>
-          <li class="breadcrгmbs__item">
-            <a class="breadcrгmbs__link" href="#">Личный профиль пользователя</a>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Личный профиль пользователя</a>
           </li>
         </ul>
         <div class="cabinet__header">
@@ -110,78 +110,964 @@
           </div>
         </div>
         <section class="tabs tabs--border">
-          <ul class="tabs__navigation js-tabs" data-cont-id="tabs-content">
-            <li class="tabs__item tabs__item--active" data-tab-id="profile">
+          <ul class="tabs__navigation js-tabs" data-cont-id="tabs-content-main">
+            <li class="tabs__item tabs__item--active" data-tab-id="tab-main-1">
               <a class="tabs__link">Мой профиль</a>
             </li>
-            <li class="tabs__item" data-tab-id="comments">
+            <li class="tabs__item" data-tab-id="tab-main-2">
               <a class="tabs__link">Комментарии</a>
             </li>
-            <li class="tabs__item" data-tab-id="settings">
+            <li class="tabs__item" data-tab-id="tab-main-3">
               <a class="tabs__link">Настройки</a>
             </li>
           </ul>
-          <div class="tabs__content" id="tabs-content">
-            <div class="profile js-tab-cont js-show tabs__pane--active" id="profile">
-              <h1 class="heading">Болею за</h1>
-              <ul class="profile__like">
-                <li class="profile__like-item">
-                  <img class="profile__like-logo" src="../sport/img/dev-cabinet-club.png" width="146" height="70" alt="Клуб">
-                  <p class="profile__like-name">FC Barcelona</p>
-                </li>
-                <li class="profile__like-item">
-                  <img class="profile__like-logo" src="../sport/img/dev-cabinet-club.png" width="146" height="70" alt="Клуб">
-                  <p class="profile__like-name">Зенит</p>
-                </li>
-                <li class="profile__like-item">
-                  <img class="profile__like-logo" src="../sport/img/dev-cabinet-club.png" width="146" height="70" alt="Клуб">
-                  <p class="profile__like-name">ЦСКА</p>
-                </li>
-                <li class="profile__like-item">
-                  <img class="profile__like-logo" src="../sport/img/dev-cabinet-club.png" width="146" height="70" alt="Клуб">
-                  <p class="profile__like-name">Манчестер Юнайтед</p>
-                </li>
-                <li class="profile__like-item">
-                  <img class="profile__like-logo" src="../sport/img/dev-cabinet-club.png" width="146" height="70" alt="Клуб">
-                  <p class="profile__like-name">FC Barcelona</p>
-                </li>
-              </ul>
-              <h1 class="heading">Мои любимые виды спорта</h1>
-              <ul class="profile__like">
-                <li class="profile__like-item">
-                  <img class="profile__like-logo" src="../sport/img/dev-cabinet-sport.png" width="146" height="69" alt="Клуб">
-                </li>
-                <li class="profile__like-item">
-                  <img class="profile__like-logo" src="../sport/img/dev-cabinet-sport.png" width="146" height="69" alt="Клуб">
-                </li>
-                <li class="profile__like-item">
-                  <img class="profile__like-logo" src="../sport/img/dev-cabinet-sport.png" width="146" height="69" alt="Клуб">
-                </li>
-                <li class="profile__like-item">
-                  <img class="profile__like-logo" src="../sport/img/dev-cabinet-sport.png" width="146" height="69" alt="Клуб">
-                </li>
-                <li class="profile__like-item">
-                  <img class="profile__like-logo" src="../sport/img/dev-cabinet-sport.png" width="146" height="69" alt="Клуб">
-                </li>
-              </ul>
-              <h1 class="heading">Подборка материалов для вас</h1>
-              <div class="pagination-wrapper">
-                <section class="tabs tabs--border">
-                  <div class="tabs__wrapper">
-                    <ul class="tabs__navigation tabs__navigation--blocks-3">
-                      <li class="tabs__item tabs__item--active">
+          <div class="tabs__content" id="tabs-content-main">
+            <div class="tabs__pane js-tab-cont js-show tabs__pane--active" id="tab-main-1">
+              <div class="profile">
+                <h1 class="heading">Болею за</h1>
+                <ul class="profile__like">
+                  <li class="profile__like-item">
+                    <img class="profile__like-logo" src="../sport/img/dev-cabinet-club.png" width="146" height="70" alt="Клуб">
+                    <p class="profile__like-name">FC Barcelona</p>
+                  </li>
+                  <li class="profile__like-item">
+                    <img class="profile__like-logo" src="../sport/img/dev-cabinet-club.png" width="146" height="70" alt="Клуб">
+                    <p class="profile__like-name">Зенит</p>
+                  </li>
+                  <li class="profile__like-item">
+                    <img class="profile__like-logo" src="../sport/img/dev-cabinet-club.png" width="146" height="70" alt="Клуб">
+                    <p class="profile__like-name">ЦСКА</p>
+                  </li>
+                  <li class="profile__like-item">
+                    <img class="profile__like-logo" src="../sport/img/dev-cabinet-club.png" width="146" height="70" alt="Клуб">
+                    <p class="profile__like-name">Манчестер Юнайтед</p>
+                  </li>
+                  <li class="profile__like-item">
+                    <img class="profile__like-logo" src="../sport/img/dev-cabinet-club.png" width="146" height="70" alt="Клуб">
+                    <p class="profile__like-name">FC Barcelona</p>
+                  </li>
+                </ul>
+                <h1 class="heading">Мои любимые виды спорта</h1>
+                <ul class="profile__like">
+                  <li class="profile__like-item">
+                    <img class="profile__like-logo" src="../sport/img/dev-cabinet-sport.png" width="146" height="69" alt="Клуб">
+                  </li>
+                  <li class="profile__like-item">
+                    <img class="profile__like-logo" src="../sport/img/dev-cabinet-sport.png" width="146" height="69" alt="Клуб">
+                  </li>
+                  <li class="profile__like-item">
+                    <img class="profile__like-logo" src="../sport/img/dev-cabinet-sport.png" width="146" height="69" alt="Клуб">
+                  </li>
+                  <li class="profile__like-item">
+                    <img class="profile__like-logo" src="../sport/img/dev-cabinet-sport.png" width="146" height="69" alt="Клуб">
+                  </li>
+                  <li class="profile__like-item">
+                    <img class="profile__like-logo" src="../sport/img/dev-cabinet-sport.png" width="146" height="69" alt="Клуб">
+                  </li>
+                </ul>
+                <h1 class="heading">Подборка материалов для вас</h1>
+                <div class="pagination-wrapper">
+                  <section class="tabs tabs--border">
+                    <ul class="tabs__navigation js-tabs" data-cont-id="tabs-content-media">
+                      <li class="tabs__item tabs__item--active" data-tab-id="tab-media-1">
                         <a class="tabs__link">Лучшее за сегодня</a>
                       </li>
-                      <li class="tabs__item">
+                      <li class="tabs__item" data-tab-id="tab-media-2">
                         <a class="tabs__link">Рекомендации</a>
                       </li>
-                      <li class="tabs__item">
+                      <li class="tabs__item" data-tab-id="tab-media-3">
                         <a class="tabs__link">Понравилось мне</a>
                       </li>
                     </ul>
+                  </section>
+                  <ul class="pagination">
+                    <li class="pagination__item pagination__item--active">
+                      <a class="pagination__link" href="#">1</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="#">2</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="#">3</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="#">4</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="#">5</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="#">6</a>
+                    </li>
+                    <li class="pagination__item pagination__item--points">
+                      <a class="pagination__link" href="#">...</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="#">99</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="profile__content" id="tabs-content-media">
+                  <div class="profile__pane js-tab-cont js-show tabs__pane--active" id="tab-media-1">
+                    <ul class="media media--three">
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>\
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>\
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
-                </section>
-                <ul class="pagination">
+                  <div class="profile__pane js-tab-cont" id="tab-media-2">
+                    <ul class="media media--three">
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Проверка таба
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>\
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>\
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="profile__pane js-tab-cont" id="tab-media-3">
+                    <ul class="media media--three">
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Проверка таба 2
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>\
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                            <svg class="media__play" width="50" height="50">
+                              <use xlink:href="../sport/img/sprite.svg#play"></use>
+                            </svg>
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>\
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                      <li class="media__item">
+                        <a class="media__link" href="#">
+                          <div class="media__img-wrapper">
+                            <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
+                          </div>
+                          <div class="media__text-block">
+                            <div class="media__text-wrapper">
+                              <ul class="tags tags--small">
+                                <li class="tags__item">Топ</li>
+                                <li class="tags__item">Футбол</li>
+                              </ul>
+                              <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
+                            </div>
+                            <h1 class="media__text">
+                              Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
+                            </h1>
+                            <p class="media__description">Мы уже перевели для вас</p>
+                            <p class="media__comments">14 комментариев</p>
+                          </div>
+                          <p class="media__section media__section--purple">Эксклюзив</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <ul class="pagination pagination--bottom">
                   <li class="pagination__item pagination__item--active">
                     <a class="pagination__link" href="#">1</a>
                   </li>
@@ -208,320 +1094,118 @@
                   </li>
                 </ul>
               </div>
-              <ul class="media media--three">
-                <li class="media__item">
-                  <a class="media__link" href="#">
-                    <div class="media__img-wrapper">
-                      <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
-                      <svg class="media__play" width="50" height="50">
-                        <use xlink:href="../sport/img/sprite.svg#play"></use>
-                      </svg>
-                    </div>
-                    <div class="media__text-block">
-                      <div class="media__text-wrapper">
-                        <ul class="tags">
-                          <li class="tags__item">Топ</li>
-                          <li class="tags__item">Футбол</li>
-                        </ul>
-                        <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                      </div>
-                      <h1 class="media__text">
-                        Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
-                      </h1>
-                      <p class="media__description">Мы уже перевели для вас</p>
-                      <p class="media__comments">14 комментариев</p>
-                    </div>
-                    <p class="media__section media__section--purple">Эксклюзив</p>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a class="media__link" href="#">
-                    <div class="media__img-wrapper">
-                      <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
-                    </div>
-                    <div class="media__text-block">
-                      <div class="media__text-wrapper">
-                        <ul class="tags tags--small">
-                          <li class="tags__item">Топ</li>
-                          <li class="tags__item">Футбол</li>
-                        </ul>
-                        <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                      </div>
-                      <h1 class="media__text">
-                        Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
-                      </h1>
-                      <p class="media__description">Мы уже перевели для вас</p>
-                      <p class="media__comments">14 комментариев</p>
-                    </div>
-                    <p class="media__section media__section--purple">Эксклюзив</p>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a class="media__link" href="#">
-                    <div class="media__img-wrapper">
-                      <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
-                      <svg class="media__play" width="50" height="50">
-                        <use xlink:href="../sport/img/sprite.svg#play"></use>
-                      </svg>
-                    </div>
-                    <div class="media__text-block">
-                      <div class="media__text-wrapper">
-                        <ul class="tags tags--small">
-                          <li class="tags__item">Топ</li>
-                          <li class="tags__item">Футбол</li>
-                        </ul>
-                        <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                      </div>
-                      <h1 class="media__text">
-                        Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
-                      </h1>
-                      <p class="media__description">Мы уже перевели для вас</p>
-                      <p class="media__comments">14 комментариев</p>
-                    </div>
-                    <p class="media__section media__section--purple">Эксклюзив</p>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a class="media__link" href="#">
-                    <div class="media__img-wrapper">
-                      <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
-                    </div>
-                    <div class="media__text-block">
-                      <div class="media__text-wrapper">
-                        <ul class="tags">
-                          <li class="tags__item">Топ</li>
-                          <li class="tags__item">Футбол</li>
-                        </ul>
-                        <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                      </div>
-                      <h1 class="media__text">
-                        Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
-                      </h1>
-                      <p class="media__description">Мы уже перевели для вас</p>
-                      <p class="media__comments">14 комментариев</p>
-                    </div>
-                    <p class="media__section media__section--purple">Эксклюзив</p>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a class="media__link" href="#">
-                    <div class="media__img-wrapper">
-                      <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
-                      <svg class="media__play" width="50" height="50">
-                        <use xlink:href="../sport/img/sprite.svg#play"></use>
-                      </svg>
-                    </div>
-                    <div class="media__text-block">
-                      <div class="media__text-wrapper">
-                        <ul class="tags tags--small">
-                          <li class="tags__item">Топ</li>
-                          <li class="tags__item">Футбол</li>
-                        </ul>\
-                        <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                      </div>
-                      <h1 class="media__text">
-                        Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
-                      </h1>
-                      <p class="media__description">Мы уже перевели для вас</p>
-                      <p class="media__comments">14 комментариев</p>
-                    </div>
-                    <p class="media__section media__section--purple">Эксклюзив</p>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a class="media__link" href="#">
-                    <div class="media__img-wrapper">
-                      <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
-                    </div>
-                    <div class="media__text-block">
-                      <div class="media__text-wrapper">
-                        <ul class="tags tags--small">
-                          <li class="tags__item">Топ</li>
-                          <li class="tags__item">Футбол</li>
-                        </ul>
-                        <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                      </div>
-                      <h1 class="media__text">
-                        Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
-                      </h1>
-                      <p class="media__description">Мы уже перевели для вас</p>
-                      <p class="media__comments">14 комментариев</p>
-                    </div>
-                    <p class="media__section media__section--purple">Эксклюзив</p>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a class="media__link" href="#">
-                    <div class="media__img-wrapper">
-                      <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
-                      <svg class="media__play" width="50" height="50">
-                        <use xlink:href="../sport/img/sprite.svg#play"></use>
-                      </svg>
-                    </div>
-                    <div class="media__text-block">
-                      <div class="media__text-wrapper">
-                        <ul class="tags">
-                          <li class="tags__item">Топ</li>
-                          <li class="tags__item">Футбол</li>
-                        </ul>
-                        <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                      </div>
-                      <h1 class="media__text">
-                        Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
-                      </h1>
-                      <p class="media__description">Мы уже перевели для вас</p>
-                      <p class="media__comments">14 комментариев</p>
-                    </div>
-                    <p class="media__section media__section--purple">Эксклюзив</p>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a class="media__link" href="#">
-                    <div class="media__img-wrapper">
-                      <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
-                    </div>
-                    <div class="media__text-block">
-                      <div class="media__text-wrapper">
-                        <ul class="tags tags--small">
-                          <li class="tags__item">Топ</li>
-                          <li class="tags__item">Футбол</li>
-                        </ul>
-                        <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                      </div>
-                      <h1 class="media__text">
-                        Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
-                      </h1>
-                      <p class="media__description">Мы уже перевели для вас</p>
-                      <p class="media__comments">14 комментариев</p>
-                    </div>
-                    <p class="media__section media__section--purple">Эксклюзив</p>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a class="media__link" href="#">
-                    <div class="media__img-wrapper">
-                      <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
-                      <svg class="media__play" width="50" height="50">
-                        <use xlink:href="../sport/img/sprite.svg#play"></use>
-                      </svg>
-                    </div>
-                    <div class="media__text-block">
-                      <div class="media__text-wrapper">
-                        <ul class="tags tags--small">
-                          <li class="tags__item">Топ</li>
-                          <li class="tags__item">Футбол</li>
-                        </ul>
-                        <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                      </div>
-                      <h1 class="media__text">
-                        Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
-                      </h1>
-                      <p class="media__description">Мы уже перевели для вас</p>
-                      <p class="media__comments">14 комментариев</p>
-                    </div>
-                    <p class="media__section media__section--purple">Эксклюзив</p>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a class="media__link" href="#">
-                    <div class="media__img-wrapper">
-                      <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
-                    </div>
-                    <div class="media__text-block">
-                      <div class="media__text-wrapper">
-                        <ul class="tags">
-                          <li class="tags__item">Топ</li>
-                          <li class="tags__item">Футбол</li>
-                        </ul>
-                        <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                      </div>
-                      <h1 class="media__text">
-                        Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
-                      </h1>
-                      <p class="media__description">Мы уже перевели для вас</p>
-                      <p class="media__comments">14 комментариев</p>
-                    </div>
-                    <p class="media__section media__section--purple">Эксклюзив</p>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a class="media__link" href="#">
-                    <div class="media__img-wrapper">
-                      <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
-                      <svg class="media__play" width="50" height="50">
-                        <use xlink:href="../sport/img/sprite.svg#play"></use>
-                      </svg>
-                    </div>
-                    <div class="media__text-block">
-                      <div class="media__text-wrapper">
-                        <ul class="tags tags--small">
-                          <li class="tags__item">Топ</li>
-                          <li class="tags__item">Футбол</li>
-                        </ul>\
-                        <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                      </div>
-                      <h1 class="media__text">
-                        Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
-                      </h1>
-                      <p class="media__description">Мы уже перевели для вас</p>
-                      <p class="media__comments">14 комментариев</p>
-                    </div>
-                    <p class="media__section media__section--purple">Эксклюзив</p>
-                  </a>
-                </li>
-                <li class="media__item">
-                  <a class="media__link" href="#">
-                    <div class="media__img-wrapper">
-                      <img class="media__img" src="../sport/img/dev-content.png" width="860" height="484" alt="Контент">
-                    </div>
-                    <div class="media__text-block">
-                      <div class="media__text-wrapper">
-                        <ul class="tags tags--small">
-                          <li class="tags__item">Топ</li>
-                          <li class="tags__item">Футбол</li>
-                        </ul>
-                        <p class="media__date">9.12.2020<span class="media__time">15:45</span></p>
-                      </div>
-                      <h1 class="media__text">
-                        Интервью Деяна Ловрена Kicker: провал России в еврокубках, почему выбрал «Зенит», за что хотел ударить Рамоса
-                      </h1>
-                      <p class="media__description">Мы уже перевели для вас</p>
-                      <p class="media__comments">14 комментариев</p>
-                    </div>
-                    <p class="media__section media__section--purple">Эксклюзив</p>
-                  </a>
-                </li>
-              </ul>
-              <ul class="pagination pagination--bottom">
-                <li class="pagination__item pagination__item--active">
-                  <a class="pagination__link" href="#">1</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">2</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">3</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">4</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">5</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">6</a>
-                </li>
-                <li class="pagination__item pagination__item--points">
-                  <a class="pagination__link" href="#">...</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">99</a>
-                </li>
-              </ul>
             </div>
-            <div class="comments js-tab-cont" id="comments">
-              <div class="heading">Сегодня
-                <ul class="pagination">
+            <div class="tabs__pane js-tab-cont" id="tab-main-2">
+              <div class="comments">
+                <div class="heading">Сегодня
+                  <ul class="pagination">
+                    <li class="pagination__item pagination__item--active">
+                      <a class="pagination__link" href="#">1</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="#">2</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="#">3</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="#">4</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="#">5</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="#">6</a>
+                    </li>
+                    <li class="pagination__item pagination__item--points">
+                      <a class="pagination__link" href="#">...</a>
+                    </li>
+                    <li class="pagination__item">
+                      <a class="pagination__link" href="#">99</a>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="comments__list">
+                  <li class="comments__item">
+                    <div class="comments__author-wrapper">
+                      <a class="comments__author" href="#">
+                        <img class="comments__img" src="../sport/img/dev-author.png" width="31" height="31" alt="Фото автора">
+                        <p class="comments__author-name">Алексей Курехин Алексей Курехин</p>
+                      </a>
+                      <p class="comments__text">ответил(-а) на ваш комментарий к публикации</p>
+                      <a class="comments__name" href="#">Травма Соболева лишит «Спартак» надежды на Лиге Чемпионов</a>
+                    </div>
+                    <a class="comments__main comments__main--padding" href="#">Ну наконец то. Ехай родной.</a>
+                    <p class="comments__date">9.12.2020<span class="comments__time">15:45</span></p>
+                  </li>
+                  <li class="comments__item">
+                    <div class="comments__author-wrapper">
+                      <a class="comments__author" href="#">
+                        <img class="comments__img" src="../sport/img/dev-author.png" width="31" height="31" alt="Фото автора">
+                        <p class="comments__author-name">Алексей Курехин Алексей Курехин</p>
+                      </a>
+                      <p class="comments__text">ответил(-а) на ваш комментарий к публикации</p>
+                      <a class="comments__name" href="#">Травма Соболева лишит «Спартак» надежды на Лиге Чемпионов</a>
+                    </div>
+                    <a class="comments__main comments__main--padding" href="#">Мало орал видимо. Так и не докричался по ходу. А может Хосонов его и не слушал. Думал что несправедливо ругают. Если бы послушал, играл бы в ЦСКА ну или в другом клубе РПЛ , а не за Аланию во втором дивизионе.Мало орал видимо. Так и не докричался по ходу. А может Хосонов его и не слушал. Думал что несправедливо ругают. Если бы послушал, играл бы в ЦСКА ну или в другом клубе РПЛ , а не за Аланию во втором дивизионе.</a>
+                    <p class="comments__date">9.12.2020<span class="comments__time">15:45</span></p>
+                  </li>
+                </ul>
+                <h1 class="heading">Вчера</h1>
+                <ul class="comments__list">
+                  <li class="comments__item">
+                    <div class="comments__author-wrapper">
+                      <a class="comments__author" href="#">
+                        <img class="comments__img" src="../sport/img/dev-author.png" width="31" height="31" alt="Фото автора">
+                        <p class="comments__author-name">Алексей Курехин Алексей Курехин</p>
+                      </a>
+                      <p class="comments__text">ответил(-а) на ваш комментарий к публикации</p>
+                      <a class="comments__name" href="#">Травма Соболева лишит «Спартак» надежды на Лиге Чемпионов</a>
+                    </div>
+                    <a class="comments__main comments__main--padding" href="#">Ну наконец то. Ехай родной.</a>
+                    <p class="comments__date">9.12.2020<span class="comments__time">15:45</span></p>
+                  </li>
+                  <li class="comments__item">
+                    <div class="comments__author-wrapper">
+                      <a class="comments__author" href="#">
+                        <img class="comments__img" src="../sport/img/dev-author.png" width="31" height="31" alt="Фото автора">
+                        <p class="comments__author-name">Алексей Курехин Алексей Курехин</p>
+                      </a>
+                      <p class="comments__text">ответил(-а) на ваш комментарий к публикации</p>
+                      <a class="comments__name" href="#">Травма Соболева лишит «Спартак» надежды на Лиге Чемпионов</a>
+                    </div>
+                    <a class="comments__main comments__main--padding" href="#">Мало орал видимо. Так и не докричался по ходу. А может Хосонов его и не слушал. Думал что несправедливо ругают. Если бы послушал, играл бы в ЦСКА ну или в другом клубе РПЛ , а не за Аланию во втором дивизионе.Мало орал видимо. Так и не докричался по ходу. А может Хосонов его и не слушал. Думал что несправедливо ругают. Если бы послушал, играл бы в ЦСКА ну или в другом клубе РПЛ , а не за Аланию во втором дивизионе.</a>
+                    <p class="comments__date">9.12.2020<span class="comments__time">15:45</span></p>
+                  </li>
+                </ul>
+                <h1 class="heading">На этой неделе</h1>
+                <ul class="comments__list">
+                  <li class="comments__item">
+                    <div class="comments__author-wrapper">
+                      <a class="comments__author" href="#">
+                        <img class="comments__img" src="../sport/img/dev-author.png" width="31" height="31" alt="Фото автора">
+                        <p class="comments__author-name">Алексей Курехин Алексей Курехин</p>
+                      </a>
+                      <p class="comments__text">ответил(-а) на ваш комментарий к публикации</p>
+                      <a class="comments__name" href="#">Травма Соболева лишит «Спартак» надежды на Лиге Чемпионов</a>
+                    </div>
+                    <a class="comments__main comments__main--padding" href="#">Ну наконец то. Ехай родной.</a>
+                    <p class="comments__date">9.12.2020<span class="comments__time">15:45</span></p>
+                  </li>
+                  <li class="comments__item">
+                    <div class="comments__author-wrapper">
+                      <a class="comments__author" href="#">
+                        <img class="comments__img" src="../sport/img/dev-author.png" width="31" height="31" alt="Фото автора">
+                        <p class="comments__author-name">Алексей Курехин Алексей Курехин</p>
+                      </a>
+                      <p class="comments__text">ответил(-а) на ваш комментарий к публикации</p>
+                      <a class="comments__name" href="#">Травма Соболева лишит «Спартак» надежды на Лиге Чемпионов</a>
+                    </div>
+                    <a class="comments__main comments__main--padding" href="#">Мало орал видимо. Так и не докричался по ходу. А может Хосонов его и не слушал. Думал что несправедливо ругают. Если бы послушал, играл бы в ЦСКА ну или в другом клубе РПЛ , а не за Аланию во втором дивизионе.Мало орал видимо. Так и не докричался по ходу. А может Хосонов его и не слушал. Думал что несправедливо ругают. Если бы послушал, играл бы в ЦСКА ну или в другом клубе РПЛ , а не за Аланию во втором дивизионе.</a>
+                    <p class="comments__date">9.12.2020<span class="comments__time">15:45</span></p>
+                  </li>
+                </ul>
+                <ul class="pagination pagination--bottom">
                   <li class="pagination__item pagination__item--active">
                     <a class="pagination__link" href="#">1</a>
                   </li>
@@ -548,194 +1232,90 @@
                   </li>
                 </ul>
               </div>
-              <ul class="comments__list">
-                <li class="comments__item">
-                  <div class="comments__author-wrapper">
-                    <a class="comments__author" href="#">
-                      <img class="comments__img" src="../sport/img/dev-author.png" width="31" height="31" alt="Фото автора">
-                      <p class="comments__author-name">Алексей Курехин Алексей Курехин</p>
-                    </a>
-                    <p class="comments__text">ответил(-а) на ваш комментарий к публикации</p>
-                    <a class="comments__name" href="#">Травма Соболева лишит «Спартак» надежды на Лиге Чемпионов</a>
-                  </div>
-                  <a class="comments__main comments__main--padding" href="#">Ну наконец то. Ехай родной.</a>
-                  <p class="comments__date">9.12.2020<span class="comments__time">15:45</span></p>
-                </li>
-                <li class="comments__item">
-                  <div class="comments__author-wrapper">
-                    <a class="comments__author" href="#">
-                      <img class="comments__img" src="../sport/img/dev-author.png" width="31" height="31" alt="Фото автора">
-                      <p class="comments__author-name">Алексей Курехин Алексей Курехин</p>
-                    </a>
-                    <p class="comments__text">ответил(-а) на ваш комментарий к публикации</p>
-                    <a class="comments__name" href="#">Травма Соболева лишит «Спартак» надежды на Лиге Чемпионов</a>
-                  </div>
-                  <a class="comments__main comments__main--padding" href="#">Мало орал видимо. Так и не докричался по ходу. А может Хосонов его и не слушал. Думал что несправедливо ругают. Если бы послушал, играл бы в ЦСКА ну или в другом клубе РПЛ , а не за Аланию во втором дивизионе.Мало орал видимо. Так и не докричался по ходу. А может Хосонов его и не слушал. Думал что несправедливо ругают. Если бы послушал, играл бы в ЦСКА ну или в другом клубе РПЛ , а не за Аланию во втором дивизионе.</a>
-                  <p class="comments__date">9.12.2020<span class="comments__time">15:45</span></p>
-                </li>
-              </ul>
-              <h1 class="heading">Вчера</h1>
-              <ul class="comments__list">
-                <li class="comments__item">
-                  <div class="comments__author-wrapper">
-                    <a class="comments__author" href="#">
-                      <img class="comments__img" src="../sport/img/dev-author.png" width="31" height="31" alt="Фото автора">
-                      <p class="comments__author-name">Алексей Курехин Алексей Курехин</p>
-                    </a>
-                    <p class="comments__text">ответил(-а) на ваш комментарий к публикации</p>
-                    <a class="comments__name" href="#">Травма Соболева лишит «Спартак» надежды на Лиге Чемпионов</a>
-                  </div>
-                  <a class="comments__main comments__main--padding" href="#">Ну наконец то. Ехай родной.</a>
-                  <p class="comments__date">9.12.2020<span class="comments__time">15:45</span></p>
-                </li>
-                <li class="comments__item">
-                  <div class="comments__author-wrapper">
-                    <a class="comments__author" href="#">
-                      <img class="comments__img" src="../sport/img/dev-author.png" width="31" height="31" alt="Фото автора">
-                      <p class="comments__author-name">Алексей Курехин Алексей Курехин</p>
-                    </a>
-                    <p class="comments__text">ответил(-а) на ваш комментарий к публикации</p>
-                    <a class="comments__name" href="#">Травма Соболева лишит «Спартак» надежды на Лиге Чемпионов</a>
-                  </div>
-                  <a class="comments__main comments__main--padding" href="#">Мало орал видимо. Так и не докричался по ходу. А может Хосонов его и не слушал. Думал что несправедливо ругают. Если бы послушал, играл бы в ЦСКА ну или в другом клубе РПЛ , а не за Аланию во втором дивизионе.Мало орал видимо. Так и не докричался по ходу. А может Хосонов его и не слушал. Думал что несправедливо ругают. Если бы послушал, играл бы в ЦСКА ну или в другом клубе РПЛ , а не за Аланию во втором дивизионе.</a>
-                  <p class="comments__date">9.12.2020<span class="comments__time">15:45</span></p>
-                </li>
-              </ul>
-              <h1 class="heading">На этой неделе</h1>
-              <ul class="comments__list">
-                <li class="comments__item">
-                  <div class="comments__author-wrapper">
-                    <a class="comments__author" href="#">
-                      <img class="comments__img" src="../sport/img/dev-author.png" width="31" height="31" alt="Фото автора">
-                      <p class="comments__author-name">Алексей Курехин Алексей Курехин</p>
-                    </a>
-                    <p class="comments__text">ответил(-а) на ваш комментарий к публикации</p>
-                    <a class="comments__name" href="#">Травма Соболева лишит «Спартак» надежды на Лиге Чемпионов</a>
-                  </div>
-                  <a class="comments__main comments__main--padding" href="#">Ну наконец то. Ехай родной.</a>
-                  <p class="comments__date">9.12.2020<span class="comments__time">15:45</span></p>
-                </li>
-                <li class="comments__item">
-                  <div class="comments__author-wrapper">
-                    <a class="comments__author" href="#">
-                      <img class="comments__img" src="../sport/img/dev-author.png" width="31" height="31" alt="Фото автора">
-                      <p class="comments__author-name">Алексей Курехин Алексей Курехин</p>
-                    </a>
-                    <p class="comments__text">ответил(-а) на ваш комментарий к публикации</p>
-                    <a class="comments__name" href="#">Травма Соболева лишит «Спартак» надежды на Лиге Чемпионов</a>
-                  </div>
-                  <a class="comments__main comments__main--padding" href="#">Мало орал видимо. Так и не докричался по ходу. А может Хосонов его и не слушал. Думал что несправедливо ругают. Если бы послушал, играл бы в ЦСКА ну или в другом клубе РПЛ , а не за Аланию во втором дивизионе.Мало орал видимо. Так и не докричался по ходу. А может Хосонов его и не слушал. Думал что несправедливо ругают. Если бы послушал, играл бы в ЦСКА ну или в другом клубе РПЛ , а не за Аланию во втором дивизионе.</a>
-                  <p class="comments__date">9.12.2020<span class="comments__time">15:45</span></p>
-                </li>
-              </ul>
-              <ul class="pagination pagination--bottom">
-                <li class="pagination__item pagination__item--active">
-                  <a class="pagination__link" href="#">1</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">2</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">3</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">4</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">5</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">6</a>
-                </li>
-                <li class="pagination__item pagination__item--points">
-                  <a class="pagination__link" href="#">...</a>
-                </li>
-                <li class="pagination__item">
-                  <a class="pagination__link" href="#">99</a>
-                </li>
-              </ul>
             </div>
-            <div class="settings js-tab-cont" id="settings">
-              <form class="form form--settings" action="">
-                <div class="form__group">
-                  <label class="form__label form__label--necessary" for="login">Логин</label>
-                  <input class="form__input" id="login" type="text" placeholder="football_fan1981">
-                  <div class="form__help">Необходимо заполнить «Логин»</div>
-                </div>
-                <div class="form__group">
-                  <label class="form__label form__label--necessary" for="name">Имя</label>
-                  <input class="form__input" id="name" type="text" placeholder="Football fan">
-                  <div class="form__help">Необходимо заполнить «Имя»</div>
-                </div>
-                <div class="form__group">
-                  <label class="form__label form__label--necessary" for="e-mail">e-mail</label>
-                  <input class="form__input" id="e-mail" type="text" placeholder="football_fan1981@gmail.com" disabled>
-                  <a class="form__edit" href="#">изменить</a>
-                  <div class="form__help">Необходимо заполнить «e-mail»</div>
-                </div>
-                <div class="form__group">
-                  <label class="form__label form__label--necessary" for="password">Пароль</label>
-                  <input class="form__input" id="password" type="password" placeholder="●●●●●●●●●●●●●" disabled>
-                  <a class="form__edit" href="#">изменить</a>
-                  <div class="form__help">Необходимо заполнить «Пароль»</div>
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="city">Город</label>
-                  <input class="form__input" id="city" type="text" placeholder="Санкт-Петербург">
-                </div>
-                <div class="form__group">
-                  <p class="form__label">Пол</p>
-                  <div class="form__wrapper">
-                    <div class="form__input-wrapper">
-                      <input class="form__input form__input--radio" id="male" type="radio" name="gender">
-                      <label class="form__label form__label--radio" for="male">Мужской</label>
-                    </div>
-                    <div class="form__input-wrapper">
-                      <input class="form__input form__input--radio" id="female" type="radio" name="gender">
-                      <label class="form__label form__label--radio" for="male">Женский</label>
+            <div class="tabs__pane js-tab-cont" id="tab-main-3">
+              <div class="settings">
+                <form class="form form--settings" action="">
+                  <div class="form__group">
+                    <label class="form__label form__label--necessary" for="login">Логин</label>
+                    <input class="form__input" id="login" type="text" placeholder="football_fan1981">
+                    <div class="form__help">Необходимо заполнить «Логин»</div>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label form__label--necessary" for="name">Имя</label>
+                    <input class="form__input" id="name" type="text" placeholder="Football fan">
+                    <div class="form__help">Необходимо заполнить «Имя»</div>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label form__label--necessary" for="e-mail">e-mail</label>
+                    <input class="form__input" id="e-mail" type="text" placeholder="football_fan1981@gmail.com" disabled>
+                    <a class="form__edit" href="#">изменить</a>
+                    <div class="form__help">Необходимо заполнить «e-mail»</div>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label form__label--necessary" for="password">Пароль</label>
+                    <input class="form__input" id="password" type="password" placeholder="●●●●●●●●●●●●●" disabled>
+                    <a class="form__edit" href="#">изменить</a>
+                    <div class="form__help">Необходимо заполнить «Пароль»</div>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="city">Город</label>
+                    <input class="form__input" id="city" type="text" placeholder="Санкт-Петербург">
+                  </div>
+                  <div class="form__group">
+                    <p class="form__label">Пол</p>
+                    <div class="form__wrapper">
+                      <div class="form__input-wrapper">
+                        <input class="form__input form__input--radio" id="male" type="radio" name="gender">
+                        <label class="form__label form__label--radio" for="male">Мужской</label>
+                      </div>
+                      <div class="form__input-wrapper">
+                        <input class="form__input form__input--radio" id="female" type="radio" name="gender">
+                        <label class="form__label form__label--radio" for="male">Женский</label>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="date">Дата рождения</label>
-                  <input class="form__input" id="date" type="date">
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="vk">Вконтакте</label>
-                  <input class="form__input" id="vk" type="url" placeholder="https:/vk.com/id629174833">
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="instagram">Instagram</label>
-                  <input class="form__input" id="instagram" type="url" placeholder="@football_fan1981">
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="twitter">Twitter</label>
-                  <input class="form__input" id="twitter" type="url" placeholder="football_fan1981">
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="facebook">Facebook</label>
-                  <input class="form__input" id="facebook" type="url" placeholder="football_fan1981">
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="ok">OK</label>
-                  <input class="form__input" id="ok" type="url" placeholder="football_fan1981">
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="club">За какие команды вы болеете?</label>
-                  <select class="form__select" id="club">
-                    <option value="Барселона">Барселона</option>
-                  </select>
-                  <a class="form__add" href="#"></a>
-                </div>
-                <div class="form__group">
-                  <label class="form__label" for="sport">Любимые виды спорта:</label>
-                  <select class="form__select" id="sport">
-                    <option value="Футбол">Футбол</option>
-                  </select>
-                  <a class="form__add" href="#"></a>
-                </div>
-                <button class="form__button" type="submit">Сохранить</button>
-              </form>
+                  <div class="form__group">
+                    <label class="form__label" for="date">Дата рождения</label>
+                    <input class="form__input" id="date" type="date">
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="vk">Вконтакте</label>
+                    <input class="form__input" id="vk" type="url" placeholder="https:/vk.com/id629174833">
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="instagram">Instagram</label>
+                    <input class="form__input" id="instagram" type="url" placeholder="@football_fan1981">
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="twitter">Twitter</label>
+                    <input class="form__input" id="twitter" type="url" placeholder="football_fan1981">
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="facebook">Facebook</label>
+                    <input class="form__input" id="facebook" type="url" placeholder="football_fan1981">
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="ok">OK</label>
+                    <input class="form__input" id="ok" type="url" placeholder="football_fan1981">
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="club">За какие команды вы болеете?</label>
+                    <select class="form__select" id="club">
+                      <option value="Барселона">Барселона</option>
+                    </select>
+                    <a class="form__add" href="#"></a>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="sport">Любимые виды спорта:</label>
+                    <select class="form__select" id="sport">
+                      <option value="Футбол">Футбол</option>
+                    </select>
+                    <a class="form__add" href="#"></a>
+                  </div>
+                  <button class="form__button" type="submit">Сохранить</button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
