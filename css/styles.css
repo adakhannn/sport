@@ -320,13 +320,17 @@ body.show:before {
 }
 
 .socials__link {
-  padding: 10px 8px;
+  padding: 10px 5px;
   display: flex;
   align-items: center;
 }
 
-.socials__icon {
+.socials__icon--white {
   fill: var(--white);
+}
+
+.socials__icon--green {
+  fill: var(--green);
 }
 
 .header__search {
@@ -1237,7 +1241,7 @@ body.show:before {
 }
 
 .button {
-  margin: 15px 0;
+  margin: 15px auto;
   width: 100%;
   padding: 15px 0;
   background-color: var(--green);
@@ -1246,6 +1250,11 @@ body.show:before {
   font-size: 18px;
   line-height: 21px;
   color: var(--white);
+  display: block;
+}
+
+.button--width-330 {
+  width: 330px;
 }
 
 .button__wrapper {
@@ -1843,20 +1852,6 @@ body.show:before {
   padding-right: 5px;
 }
 
-.redaction__contact-list {
-  display: flex;
-  align-items: center;
-}
-
-.redaction__contact-link {
-  padding: 10px 5px;
-  display: block;
-}
-
-.redaction__contact-icon {
-  fill: var(--green);
-}
-
 .redaction__download {
   font-weight: 700;
   font-size: 18px;
@@ -1984,7 +1979,7 @@ body.show:before {
   color: var(--light-black);
 }
 
-.pagination__link--points {
+.pagination__item--points .pagination__link {
   background-color: inherit;
   align-items: flex-end;
   border: none;
@@ -2376,7 +2371,7 @@ body.show:before {
   background-color: var(--white);
   border-radius: 10px;
   width: 100%;
-  padding: 10px 5px;
+  padding: 10px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -2415,6 +2410,7 @@ body.show:before {
   line-height: 19px;
   color: var(--gray);
   margin: 0 5px;
+  white-space: nowrap;
 }
 
 .comments__name {
@@ -2423,7 +2419,6 @@ body.show:before {
   line-height: 16px;
   text-decoration: underline;
   color: var(--dark-gray);
-  max-width: 39%;
   z-index: 3;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -2434,10 +2429,14 @@ body.show:before {
 
 .comments__main {
   display: block;
-  padding: 10px 0 10px 45px;
+  padding: 10px 0 10px 10px;
   font-size: 14px;
   line-height: 19px;
   color: var(--dark-gray);
+}
+
+.comments__main--padding {
+  padding: 10px 0 10px 45px;
 }
 
 .comments__date {
@@ -3196,12 +3195,16 @@ body.show:before {
   display: flex;
   width: 100%;
   padding: 0 25px;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 40px;
 }
 
 .login--check-in .login__socials {
   margin-top: 15px;
+}
+
+.login__socials-link {
+  padding: 10px 7px;
 }
 
 .login__link-text {
