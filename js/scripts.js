@@ -6,25 +6,6 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function() {
-
-    frontend.isMobile = $('body').outerWidth() < 481;
-    frontend.isTablet = $('body').outerWidth() < 1201;
-
-    frontend.menu.init();
-    frontend.menuTwoLevel.init();
-    frontend.tabs.init();
-    frontend.slick.init();
-    frontend.tinySlider.init();
-    frontend.toTop.init();
-
-    $(window).resize(function() {
-        frontend.isMobile = $('body').outerWidth() < 481;
-        frontend.isTablet = $('body').outerWidth() < 1201;
-        frontend.menuTwoLevel.init();
-    });
-});
-
 var hamburger = document.querySelector(".js-hamburger");
 var menuMobile = document.querySelector(".js-main-menu");
 
@@ -63,61 +44,25 @@ if(pushUp) {
     });
 }
 
+$(document).ready(function() {
+
+    frontend.isMobile = $('body').outerWidth() < 481;
+    frontend.isTablet = $('body').outerWidth() < 1201;
+
+    frontend.tabs.init();
+    frontend.tinySlider.init();
+
+    $(window).resize(function() {
+        frontend.isMobile = $('body').outerWidth() < 481;
+        frontend.isTablet = $('body').outerWidth() < 1201;
+    });
+});
+
 var frontend = new function() {
     var self = this;
 
     this.params = {
         'bodyContainer': $('body')
-    };
-
-    this.menu = new function() {
-        var that= this;
-
-        this.init = function() {
-            var hamburger = $('.js-menu-hamburger'),
-                headerWrapper = $('.js-menu-header');
-
-            $(hamburger).click(function() {
-                $(hamburger).toggleClass('open');
-                $(headerWrapper).toggleClass('open');
-            });
-        };
-    };
-
-    this.menuTwoLevel = new function() {
-        var that= this;
-
-        this.init = function() {
-            var header = $('.js-header'),
-                hamburger = $('.js-hamburger'),
-                menu = $('.js-menu');
-                hasSubmenu = $('.js-has-submenu > .menu__link');
-
-            if (frontend.isTablet) {
-                $(hamburger).click(function () {
-                    event = event || window.event;
-                    event.preventDefault();
-
-                    $(hamburger).toggleClass('open');
-                    $(menu).toggleClass('open');
-                    $(header).toggleClass('open');
-                    if ($(header).hasClass('open')) {
-                        $('body').css('overflow', 'hidden');
-                    } else {
-                        $('body').css('overflow', 'unset');
-                    }
-                });
-
-                $(hasSubmenu).click(function () {
-                    event.preventDefault();
-                    var li = $(this).parent(),
-                        submenu = $(li).find('.js-submenu');
-
-                    $(submenu).toggleClass('open');
-                    $(li).toggleClass('open');
-                });
-            }
-        };
     };
 
     this.tabs = new function() {
@@ -242,139 +187,6 @@ var frontend = new function() {
         };
 
         this.callbacks = {};
-    };
-
-    this.locker = {
-        lock: function(el) {
-            var lockerContent = $('<div>', {'class': 'locker-content'}).html($(el).html()).hide();
-            $(el).html(lockerContent);
-            //$(el).append(this.getLoadGif());
-            if ($(el).data('lockerText')) {
-                $(el).append($(el).data('lockerText'));
-            }
-            $(el).attr('disabled', 1);
-            $(el).prop('disabled', true);
-        },
-
-        unlock: function(el) {
-            var lockerContent = $(el).find('.locker-content').html();
-            $(el).html(lockerContent);
-            $(el).removeAttr('disabled');
-            $(el).prop('disabled', false);
-        },
-
-        getLoadGif: function() {
-            return $('<i>', {'class': 'fa fa-refresh'})
-        }
-    };
-
-    this.slick = new function() {
-        var that = this;
-
-        this.init = function() {
-            $('.js-slick').each(function() {
-                that.build(this);
-            });
-        };
-
-        this.build = function(slider) {
-            if ($(slider).hasClass('js-already-init-slick')) {
-                return;
-            }
-
-            $(slider).addClass('js-already-init-slick');
-            var data = $(slider).data();
-
-            if (data['arrowsContainer'] || (data['customArrows'] && data['prevArrow'] && data['nextArrow'])) {
-                data['arrows'] = true;
-            }
-
-            if (data['dotsContainer']) {
-                data['dots'] = true;
-            }
-
-            var params = {
-                'centerMode'    : data['centerMode']       ? data['centerMode']       : false,
-                'slidesToShow'  : data['slidesToShow']     ? data['slidesToShow']     : 1,
-                'accessibility' : data['accessibility']    ? data['accessibility']    : false,
-                'initialSlide'  : data['initialSlide']     ? data['initialSlide']     : 0,
-                'speed'         : data['speed']            ? data['speed']            : 700,
-                'slidesToScroll': data['slidesToScroll']   ? data['slidesToScroll']   : 1,
-                'autoplay'      : data['autoplay']         ? data['autoplay']         : false,
-                'autoplaySpeed' : data['autoplaySpeed']    ? data['autoplaySpeed']    : 10000,
-                'dots'          : data['dots']             ? data['dots']             : false,
-                'dotsClass'     : data['dotsClass']        ? data['dotsClass']        : false,
-                'appendDots'    : data['dotsContainer']    ? data['dotsContainer']    : false,
-                'arrows'        : data['arrows']           ? data['arrows']           : false,
-                'appendArrows'  : data['arrowsContainer']  ? data['arrowsContainer']  : false,
-                'prevArrow'     : data['prevArrow']        ? data['prevArrow']        : false,
-                'nextArrow'     : data['nextArrow']        ? data['nextArrow']        : false,
-                'infinite'      : data['infinite']         ? data['infinite']         : false,
-                'responsive'    : data['breakpoints']      ? data['breakpoints']      : []
-            };
-
-            $(slider).slick(params);
-            if (data['startIndex']) {
-                $(slider).slick('slickGoTo', data['startIndex']);
-            }
-        }
-    };
-
-    this.overlay = new function() {
-        var that = this;
-
-        this.get = function() {
-            if (!$('.overlay').length) {
-                that.create();
-            }
-
-            return $('.overlay');
-        };
-
-        this.create = function() {
-            if (!$('.overlay').length) {
-                $(frontend.params.bodyContainer).append($('<div>', {'class': 'overlay'}).hide());
-            }
-        };
-
-        this.open = function() {
-            if (!$('.overlay').length) {
-                that.create();
-            }
-            $('.overlay').show();
-        };
-
-        this.close = function() {
-            if (!$('.overlay').length) {
-                that.create();
-            }
-            $('.overlay').hide();
-        }
-    };
-
-    this.toTop = new function() {
-        var that = this;
-        const OFFSET = 100;
-
-        this.init = function() {
-            var windowScrollTop = window.scrollY;
-            if (windowScrollTop > OFFSET) {
-                $('.js-to-top, .js-to-back').fadeIn(0);
-            }
-
-            $(window).scroll(function(){
-                if ($(this).scrollTop() > OFFSET) {
-                    $('.js-to-top, .js-to-back').fadeIn();
-                } else {
-                    $('.js-to-top, .js-to-back').fadeOut();
-                }
-            });
-
-            $('.js-to-top').click(function(){
-                $("html, body").animate({ scrollTop: 0 }, 600);
-                return false;
-            });
-        };
     };
 
     this.tinySlider = new function() {

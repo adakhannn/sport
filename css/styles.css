@@ -1641,6 +1641,18 @@ body.show:before {
   background-color: var(--white);
 }
 
+.info__select {
+  width: 100%;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--blue-black);
+  border-radius: 5px;
+  border: 1px solid var(--green);
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+}
+
 .media-mini {
   overflow-y: scroll;
   border-bottom-left-radius: 10px;
@@ -1715,18 +1727,6 @@ body.show:before {
   overflow: hidden;
   text-overflow: ellipsis;
   color: var(--dark-gray);
-}
-
-.media-mini__select {
-  width: 100%;
-  padding: 5px 10px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  color: var(--blue-black);
-  border-radius: 5px;
-  border: 1px solid var(--green);
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
 }
 
 .media-mini__author {
@@ -2913,7 +2913,7 @@ body.show:before {
   align-items: center;
   user-select: none;
   width: 100%;
-  padding: 8px 17px;
+  padding: 8px 50px 8px 15px;
   border-radius: 2px;
 }
 
