@@ -1705,6 +1705,7 @@ body.show:before {
 
 .form--interview .form__group {
   margin: 9px 0;
+  position: relative;
 }
 
 .form--interview .form__input {
@@ -1735,8 +1736,22 @@ body.show:before {
   margin-right: 10px;
 }
 
-.form--interview .form__input:checked+.form__label::before {
-  background-color: var(--blue);
+.form--interview .form__label::after {
+  content: '';
+  display: none;
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 50%;
+  background-color: var(--green);
+  left: 3px;
+  top: 9px;
+  position: absolute;
+}
+
+.form--interview .form__input:checked+.form__label::after {
+  display: inline-block;
 }
 
 .form--interview .form__button {
@@ -1749,6 +1764,85 @@ body.show:before {
   font-size: 18px;
   line-height: 21px;
   color: var(--white);
+}
+
+.info__result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info__result-heading {
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--dark-gray);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.info__group {
+  margin-bottom: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.info__group--checked:after {
+  content: url(../img/check.svg);
+  display: block;
+  position: absolute;
+  right: 55px;
+  z-index: 6;
+}
+
+.info__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  color: var(--light-black);
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  width: 100%;
+  padding: 5px 20px;
+  z-index: 6;
+}
+
+.info__percent {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--light-black);
+  padding: 0 12px;
+  position: absolute;
+  right: 0;
+}
+
+.info__scale {
+  width: 50%;
+  background: rgba(10, 137, 31, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 5;
+}
+
+.info__button {
+  margin: 15px 0;
+  width: 100%;
+  padding: 15px 0;
+  background-color: var(--gray);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: var(--white);
+  cursor: auto;
 }
 
 /* стили для страницы о нас */
@@ -2492,11 +2586,9 @@ body.show:before {
   top: 2px;
 }
 
-.form--settings .form__input,
-.form--settings .form__select {
+.form--settings .form__input {
   width: 100%;
   padding: 0 15px;
-  font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: var(--slate-gray);
@@ -2506,6 +2598,25 @@ body.show:before {
   display: flex;
   align-items: center;
   height: 36px;
+}
+
+.form--settings .form__select {
+  width: 100%;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--slate-gray);
+  background-color: var(--white);
+  border: 1px solid var(--gainsboro);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  margin-bottom: 10px;
+}
+
+.form--settings .form__select:last-child {
+  margin-bottom: 0;
 }
 
 .form--settings .form__edit {
@@ -3240,6 +3351,16 @@ body.show:before {
   border-radius: 5px;
   width: 100%;
   padding: 10px 15px;
+}
+
+.form__input:focus {
+  border: 1px solid var(--green);
+  outline: none;
+}
+
+.form__input:required {
+  border: 1px solid var(--red);
+  outline: none;
 }
 
 .form__help {
