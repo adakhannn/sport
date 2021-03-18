@@ -2823,6 +2823,15 @@ body.show:before {
   margin-top: 25px;
 }
 
+.form--settings .form__cancel {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  text-decoration: underline;
+  padding: 15px;
+  color: var(--gray);
+}
+
 /* стили для страницы Опросы */
 
 .quizzes__wrapper {
@@ -3118,15 +3127,64 @@ body.show:before {
   margin-right: 5px;
 }
 
-.filter__select {
+.filter__item {
   width: 200px;
+}
+
+.dropdown {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown__title {
+  width: 100%;
   padding: 10px 15px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--blue-black);
   border-radius: 5px;
   border: 1px solid var(--snow);
+  background-color: var(--white);
+  position: relative;
+}
+
+.dropdown__title--border-green {
+  border: 1px solid var(--green);
+}
+
+.dropdown__img {
+  margin-right: 8px;
+  flex-shrink: 1;
+}
+
+.dropdown__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--blue-black);
+  display: flex;
+  align-items: center;
+}
+
+.dropdown__arrow {
+  stroke: var(--black);
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 3px);
+}
+
+.dropdown__options {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  background-color: var(--white);
+  border: 0.5px solid var(--snow);
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 0;
+  z-index: 1;
+  display: none;
+}
+
+.dropdown__option {
+  padding: 5px 10px;
 }
 
 .materials {

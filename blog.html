@@ -54,10 +54,28 @@
       <div class="pagination-wrapper">
         <div class="filter">
           <p class="filter__date"><span class="filter__day">Сегодня</span>13 января 2021</p>
-          <select class="filter__select">
-            <option class="filter__option" value="По дате">Футбол</option>
-            <option class="filter__option" value="По популярности">Баскетбол</option>
-          </select>
+          <ul class="filter__list">
+            <li class="filter__item">
+              <div class="dropdown">
+                <div class="dropdown__title">
+                  <a class="dropdown__link">
+                    Самые свежие
+                    <svg class="dropdown__arrow" width="10" height="6">
+                      <use xlink:href="../sport/img/sprite.svg#arrow-check"></use>
+                    </svg>
+                  </a>
+                </div>
+                <ul class="dropdown__options">
+                  <li class="dropdown__option">
+                    <a class="dropdown__link">Старые</a>
+                  </li>
+                  <li class="dropdown__option">
+                    <a class="dropdown__link">Вчерашние</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
         </div>
         <ul class="pagination">
           <li class="pagination__item pagination__item--active">
