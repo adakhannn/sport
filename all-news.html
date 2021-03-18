@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Блог</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<!--Максимальный размер контентного изрбражения 1240*697-->
+<!--Максимальный размер рекламного изрбражения 860*486-->
+<!--Максимальный размер фотки автора 100*100-->
+<a href="index.html">Ссылка на страницу Главная</a>
+<a href="search.html">Ссылка на страницу поиск</a>
+<a href="error.html">Ссылка на страницу 404</a>
+<a href="cabinet.html">Ссылка на страницу Личный кабинет</a>
+<a href="profile.html">Ссылка на страницу Личный кабинет(когда смотрит другой пользователь)</a>
+<a href="about-us.html">Ссылка на страницу О нас</a>
+<a href="quizzes.html">Ссылка на страницу Опросы</a>
+<a href="authorization.html">Ссылка на страницу Авторизация</a>
+<a href="media.html">Ссылка на страницу Медии</a>
+<a href="blog.html">Ссылка на страницу Блог</a>
+<a href="blogs.html">Ссылка на страницу Все Блоги</a>
+<a href="all-news.html">Ссылка на страницу Все Новости</a>
+<main class="main">
+  <div class="main-content">
+    <div class="content">
+      <a class="ad" href="#">
+        <img class="ad__img" src="../sport/img/dev-ad-banner.png" width="860" height="486" alt="Рекламный баннер">
+      </a>
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Блоги</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Брат Нурмагомедова проведёт бой завтра</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Личный профиль пользователя</a>
+        </li>
+      </ul>
+      <form class="form form--search" action="">
+        <div class="form__group">
+          <input class="form__input" type="text" placeholder="Поиск по ключевому слову или фразе">
+          <button class="form__button">
+            <svg class="form__icon" width="20" height="20">
+              <use xlink:href="../sport/img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </form>
+      <h1 class="heading">Новости спорта</h1>
+      <div class="pagination-wrapper">
+        <section class="tabs tabs--border">
+          <ul class="tabs__navigation js-tabs" data-cont-id="tabs-content">
+            <li class="tabs__item tabs__item--active" data-tab-id="tab-1">
+              <a class="tabs__link">Все</a>
+            </li>
+            <li class="tabs__item" data-tab-id="tab-2">
+              <a class="tabs__link">Новостные материалы</a>
+            </li>
+            <li class="tabs__item" data-tab-id="tab-3">
+              <a class="tabs__link">Статьи</a>
+            </li>
+            <li class="tabs__item" data-tab-id="tab-4">
+              <a class="tabs__link">Материалы блогов</a>
+            </li>
+          </ul>
+        </section>
+        <ul class="pagination">
+          <li class="pagination__item pagination__item--active">
+            <a class="pagination__link" href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">4</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">5</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">6</a>
+          </li>
+          <li class="pagination__item pagination__item--points">
+            <a class="pagination__link" href="#">...</a>
+          </li>
+          <li class="pagination__item">
+            <a class="pagination__link" href="#">99</a>
+          </li>
+        </ul>
+      </div>
+      <div class="filter">
+        <ul class="filter__list">
+          <li class="filter__item">
+            <div class="dropdown">
+              <div class="dropdown__title">
+                <a class="dropdown__link">
+                  Футбол
+                  <svg class="dropdown__arrow" width="10" height="6">
+                    <use xlink:href="../sport/img/sprite.svg#arrow-check"></use>
+                  </svg>
+                </a>
+              </div>
+              <ul class="dropdown__options">
+                <li class="dropdown__option">
+                  <a class="dropdown__link">Футбол</a>
+                </li>
+                <li class="dropdown__option">
+                  <a class="dropdown__link">Баскетбол</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="filter__item">
+            <div class="dropdown">
+              <div class="dropdown__title">
+                <a class="dropdown__link">
+                  Самые свежие
+                  <svg class="dropdown__icon" width="18" height="18">
+                    <use xlink:href="../sport/img/sprite.svg#filter"></use>
+                  </svg>
+                </a>
+              </div>
+              <ul class="dropdown__options">
+                <li class="dropdown__option">
+                  <a class="dropdown__link">Старые</a>
+                </li>
+                <li class="dropdown__option">
+                  <a class="dropdown__link">Вчерашние</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="datepicker">
+          <div class="datepicker__title">
+            <a class="datepicker__link">
+              <svg class="datepicker__icon" width="16" height="17">
+                <use xlink:href="../sport/img/sprite.svg#calendar-big"></use>
+              </svg>
+              вт, 2 марта - вт, 10 марта
+              <svg class="datepicker__arrow" width="10" height="6">
+                <use xlink:href="../sport/img/sprite.svg#arrow-check"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <ul class="tags">
+          <li class="tags__item">Топ</li>
+          <li class="tags__item">Эксклюзив</li>
+        </ul>
+      </div>
+      <ul class="materials">
+        <li class="materials__item">
+          <a class="materials__link" href="#">
+            <div class="materials__info">
+              <p class="materials__time">12:32</p>
+              <div class="materials__comments">
+                <svg class="materials__comments-icon" width="12px" height="11">
+                  <use xlink:href="../sport/img/sprite.svg#comment"></use>
+                </svg>
+                <p class="materials__comments-text">8</p>
+              </div>
+            </div>
+            <div class="materials__main">
+              <img class="materials__img" src="../sport/img/dev-content.png" width="125" height="70" alt="Блог">
+              <p class="materials__text">Федун может сделать «Спартак» сильнее после ухода Тедеско, если не ошибется с новым тренером</p>
+            </div>
+          </a>
+        </li>
+        <li class="materials__item">
+          <a class="materials__link" href="#">
+            <div class="materials__info">
+              <p class="materials__time">12:32</p>
+              <div class="materials__comments">
+                <svg class="materials__comments-icon" width="12px" height="11">
+                  <use xlink:href="../sport/img/sprite.svg#comment"></use>
+                </svg>
+                <p class="materials__comments-text">8</p>
+              </div>
+            </div>
+            <div class="materials__main">
+              <img class="materials__img" src="../sport/img/dev-content.png" width="125" height="70" alt="Блог">
+              <p class="materials__text">Федун может сделать «Спартак» сильнее после ухода Тедеско, если не ошибется с новым тренером</p>
+            </div>
+          </a>
+        </li>
+        <li class="materials__item">
+          <a class="materials__link" href="#">
+            <div class="materials__info">
+              <p class="materials__time">12:32</p>
+              <div class="materials__comments">
+                <svg class="materials__comments-icon" width="12px" height="11">
+                  <use xlink:href="../sport/img/sprite.svg#comment"></use>
+                </svg>
+                <p class="materials__comments-text">8</p>
+              </div>
+            </div>
+            <div class="materials__main">
+              <img class="materials__img" src="../sport/img/dev-content.png" width="125" height="70" alt="Блог">
+              <p class="materials__text">Федун может сделать «Спартак» сильнее после ухода Тедеско, если не ошибется с новым тренером</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <ul class="pagination pagination--bottom">
+        <li class="pagination__item pagination__item--active">
+          <a class="pagination__link" href="#">1</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">2</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">3</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">4</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">5</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">6</a>
+        </li>
+        <li class="pagination__item pagination__item--points">
+          <a class="pagination__link" href="#">...</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link" href="#">99</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+</body>
+</html>

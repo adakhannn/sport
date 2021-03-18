@@ -1130,6 +1130,10 @@ body.show:before {
   text-transform: uppercase;
 }
 
+.tags__item:last-child {
+  margin-right: 0;
+}
+
 .tags--medium .tags__item {
   padding: 1px 7px;
   font-size: 16px;
@@ -3127,8 +3131,13 @@ body.show:before {
   margin-right: 5px;
 }
 
+.filter__list {
+  display: flex;
+}
+
 .filter__item {
   width: 200px;
+  margin-right: 10px;
 }
 
 .dropdown {
@@ -3161,6 +3170,7 @@ body.show:before {
   color: var(--blue-black);
   display: flex;
   align-items: center;
+  padding-right: 20px;
 }
 
 .dropdown__arrow {
@@ -3168,6 +3178,12 @@ body.show:before {
   position: absolute;
   right: 15px;
   top: calc(50% - 3px);
+}
+
+.dropdown__icon {
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 9px);
 }
 
 .dropdown__options {
@@ -3258,6 +3274,44 @@ body.show:before {
   display: grid;
   grid-row-gap: 20px;
   margin: 20px 0;
+}
+
+/* стили для страницы Все Новости */
+
+.datepicker {
+  position: relative;
+  width: 265px;
+  margin-right: 10px;
+}
+
+.datepicker__title {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid var(--snow);
+  background-color: var(--white);
+  position: relative;
+}
+
+.datepicker__icon {
+  margin-right: 30px;
+}
+
+.datepicker__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--blue-black);
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.datepicker__arrow {
+  stroke: var(--black);
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 3px);
 }
 
 /* стили для footer */
