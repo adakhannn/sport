@@ -317,7 +317,8 @@ body.show:before {
 .socials {
   display: flex;
   margin-left: auto;
-  justify-content: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .socials__link {
@@ -1100,6 +1101,8 @@ body.show:before {
 .tags {
   display: flex;
   margin-right: 10px;
+  flex-wrap: wrap;
+  gap: 7px;
 }
 
 .tags__item {
@@ -1109,7 +1112,6 @@ body.show:before {
   line-height: 22px;
   color: var(--white);
   font-weight: 600;
-  margin-right: 7px;
   background-color: var(--light-green);
   text-transform: uppercase;
 }
@@ -2956,6 +2958,7 @@ body.show:before {
   overflow: hidden;
   z-index: -1;
   border-radius: 10px;
+  opacity: 0.5;
 }
 
 .quizzes__result {
@@ -3285,6 +3288,96 @@ body.show:before {
   position: absolute;
   right: 15px;
   top: calc(50% - 3px);
+}
+
+/* стили для страницы Автор */
+
+.author {
+  display: flex;
+  padding: 10px 25px;
+  align-items: flex-start;
+}
+
+.author__img-block {
+  display: flex;
+  flex-direction: column;
+  width: 99px;
+  margin-right: 45px;
+}
+
+.author__img {
+  border-radius: 50%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 15px;
+}
+
+.author__name-block {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.author__name {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: var(--dark-gray);
+  margin-bottom: 10px;
+}
+
+.author__description {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--green);
+  margin-bottom: 5px;
+}
+
+.author__text {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--dark-gray);
+  margin-bottom: 30px;
+}
+
+.blogs-mini {
+  display: grid;
+  grid-row-gap: 55px;
+  grid-column-gap: 55px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 15px 0 25px;
+}
+
+.blogs-mini__link {
+  display: flex;
+  align-items: flex-start;
+}
+
+.blogs-mini__img {
+  border-radius: 50%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 15px;
+}
+
+.blogs-mini__name-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blogs-mini__name {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--light-black);
+  margin-bottom: 10px;
+}
+
+.blogs-mini__description {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--green);
 }
 
 /* стили для footer */
